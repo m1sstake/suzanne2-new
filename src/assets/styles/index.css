@@ -1,0 +1,13 @@
+
+@import 'vars.css';
+
+@import 'project.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page__wrapper {
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-xxl);
+}

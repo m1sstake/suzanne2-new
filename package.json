@@ -1,0 +1,43 @@
+{
+  "name": "suzanne-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --mode dev --host",
+    "analyze": "vite-bundle-visualizer",
+    "build": "vite build --mode prod",
+    "preview": "vite preview",
+    "lint": "eslint --fix"
+  },
+  "author": "m1sstake",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@csstools/postcss-global-data": "^3.0.0",
+    "@intlify/unplugin-vue-i18n": "^6.0.0",
+    "@rushstack/eslint-patch": "^1.10.4",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "@vueuse/core": "^11.1.0",
+    "@vueuse/motion": "^2.2.6",
+    "autoprefixer": "^10.4.20",
+    "es-toolkit": "^1.26.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "lightningcss": "^1.27.0",
+    "postcss": "^8.4.47",
+    "postcss-custom-media": "^11.0.5",
+    "postcss-nesting": "^13.0.1",
+    "reset-css": "^5.0.2",
+    "tailwindcss": "^3.4.15",
+    "unplugin-fonts": "^1.1.1",
+    "vite": "^5.4.10",
+    "vite-bundle-visualizer": "^1.2.1",
+    "vite-svg-loader": "^5.1.0",
+    "vue": "^3.5.12",
+    "vue-i18n": "^10.0.4",
+    "vue-router": "^4.4.5"
+  }
+}

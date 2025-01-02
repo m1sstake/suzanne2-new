@@ -18,8 +18,8 @@ import { useRoute } from 'vue-router';
 
 const works = [
   { title: 'Saved Messages', routeName: 'SavedMessagesPage' },
-  { title: 'UX Solutions For HSE Lyceum', routeName: 'HsePage' },
   { title: 'Graphic Design Projects', routeName: 'GraphicDesignPage' },
+  { title: 'UX Solutions For HSE Lyceum', routeName: 'HsePage' },
   { title: 'Heylama', routeName: 'HeylamaPage' },
 ];
 

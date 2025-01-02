@@ -1,5 +1,8 @@
 <template>
-  <div class="cards">
+  <div
+    id="about"
+    class="cards"
+  >
     <div class="cards__title">
       Why Working with Me <br />
       Feels Easy
@@ -29,7 +32,8 @@
         </div>
 
         <div class="cards__item-description">
-          I offer creative ideas and always aiming to improve the product.
+          I offer creative ideas and always aiming <br />
+          to improve the product.
         </div>
       </div>
       <div class="cards__item">
@@ -38,8 +42,8 @@
         <div class="cards__item-title">I Don't Point Fingers</div>
 
         <div class="cards__item-description">
-          If I make a mistake (happens to everyone), I own up to it and work to
-          fix it without blaming anybody.
+          If I make a mistake (happens to everyone),<br />
+          I own up to it and work to fix it without blaming anybody.
         </div>
       </div>
       <div class="cards__item">
@@ -83,9 +87,9 @@
 
         <div class="cards__item-title">I’m Just Nice</div>
 
-        <div class="cards__item-description">
-          I have a pretty good sense of humor and <br />
-          am an easy-going person to talk to.
+        <div class="cards__item-description !text-white">
+          I have a pretty good sense of humor <br />
+          and am an easy-going person to talk to.
         </div>
       </div>
     </div>
@@ -167,6 +171,7 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  color: var(--color-text-gray);
 }
 
 .cards__item-link {

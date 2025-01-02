@@ -18,11 +18,13 @@
     <div class="project__subtitle">Blendo – Perfume Festival</div>
 
     <div class="project__text">
-      Blendo Perfume Festival is an event for fragrance enthusiasts and those
-      seeking personalized scents that reflect their unique story and style. The
-      event targets men and women aged 25-50, with middle to high income, who
-      are willing to invest in niche fragrances. The brand's goal is to inspire
-      exploration and discovery.
+      <p>
+        Blendo Perfume Festival is an event for fragrance enthusiasts and those
+        seeking personalized scents that reflect their unique story and style.
+        The event targets men and women aged 25-50, with middle to high income,
+        who are willing to invest in niche fragrances. The brand's goal is to
+        inspire exploration and discovery.
+      </p>
     </div>
 
     <div class="project__image mt-xl"></div>

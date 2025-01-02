@@ -28,6 +28,7 @@
       :duration="500"
     />
     <SocialBlock
+      id="contacts"
       v-motion
       :initial="{ opacity: 0, y: 100 }"
       :visible="{ opacity: 1, y: 0 }"
@@ -102,7 +103,8 @@ const projects = [
   },
   {
     name: 'Graphic Design Projects',
-    description: 'Various projects I worked on as a designer and illustrator.',
+    description:
+      'Various projects I worked on as a designer <br/> and illustrator.',
     date: '2023 – 2024',
     tags: [
       'visual identities and brand guidelines',

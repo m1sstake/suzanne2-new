@@ -46,8 +46,8 @@
       </p>
 
       <span class="project__bold-text">
-        I joined Heylama as the sole product designer during the pivotal phase
-        of launching.
+        I joined Heylama as the sole product designer during <br />
+        the pivotal phase of launching.
       </span>
     </div>
 
@@ -106,7 +106,7 @@
     <div class="project__subtitle">Memory and Retention</div>
 
     <div class="project__text">
-      <div class="heylama__bold-title">Process</div>
+      <div class="project__bold-title">Process</div>
 
       <p>
         To improve long-term memory retention, we applied a spaced repetition
@@ -186,7 +186,7 @@ const tags = [
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
-  width: 80%;
+  width: 90%;
 }
 
 .heylama__text-red {

@@ -10,13 +10,14 @@
     ></div>
 
     <div class="app-menu__items-wrapper">
-      <div
+      <router-link
         v-for="(item, i) in menuItems"
         :key="i"
         class="app-menu__item"
+        :to="item.to"
       >
         {{ item.name }}
-      </div>
+      </router-link>
     </div>
   </header>
 </template>
@@ -26,10 +27,10 @@ import { computed } from 'vue';
 
 const { t } = useI18n();
 const menuItems = computed(() => [
-  { name: t('menu.works') },
-  { name: t('menu.aboutMe') },
+  { name: 'main', to: '/' },
+  { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.myCV') },
-  { name: t('menu.contact') },
+  { name: t('menu.contact'), to: '/#contacts' },
 ]);
 </script>
 <style>

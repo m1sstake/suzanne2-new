@@ -53,7 +53,7 @@
     margin-top: var(--space-lg);
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: var(--space-sm);
 
     p {
         font-size: 16px;
@@ -90,8 +90,4 @@
 
 .project__list li span {
     margin-left: var(--space-md);
-}
-
-.project__list li::marker {
-    color: var(--color-accent-red);
 }

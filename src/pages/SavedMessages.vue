@@ -51,7 +51,7 @@
         searching for original articles.
       </p>
 
-      <p class="project__bold-text !text-text">
+      <p class="project__bold-text !text-accent-red">
         That was reasonable to create a website featuring curated articles and
         news from different countries.
       </p>
@@ -106,7 +106,7 @@
         This will help with competitor analysis and refining my product.
       </p>
 
-      <ul class="saved__list">
+      <ul class="project__list">
         <li>
           Both students and teachers use news articles for learning; however,
           not everyone finds news engaging, with many preferring articles.

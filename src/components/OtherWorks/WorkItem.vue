@@ -63,6 +63,7 @@ const props = defineProps({
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  align-items: center;
 }
 
 .work-item__description {

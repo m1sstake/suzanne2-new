@@ -10,7 +10,9 @@
     <div class="project-preview__info">
       <div class="project-preview__info-wrap">
         <div class="project-preview__title">{{ props.title }}</div>
-        <div class="project-preview__description">{{ props.description }}</div>
+        <div class="project-preview__description">
+          <span v-html="props.description"></span>
+        </div>
         <div class="project-preview__date">{{ props.date }}</div>
       </div>
 

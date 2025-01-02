@@ -20,10 +20,10 @@
       <div>
         <div class="start__stat">
           <span class="start__stat-title">3</span>
-          <span class="start__stat-value"
-            >product companies <br />
-            I’ve worked with</span
-          >
+          <span class="start__stat-value w-100">
+            product companies <br />
+            I’ve worked with
+          </span>
         </div>
       </div>
     </div>

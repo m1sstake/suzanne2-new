@@ -11,7 +11,10 @@
       <div class="project-intro__role">
         <div class="project-intro__role-title">Role</div>
         <div class="project-intro__role-txt">{{ props.role }}</div>
-        <div class="project-intro__about-description">
+        <div
+          v-if="$slots.role"
+          class="project-intro__about-description"
+        >
           <slot name="role" />
         </div>
         <div class="project-intro__about-time">

@@ -16,11 +16,28 @@ import WorkItem from '@/components/OtherWorks/WorkItem.vue';
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
+import SavedCover from '@/assets/images/other-works/saved-messages-min.png';
+import GraphicCover from '@/assets/images/other-works/graphic-min.png';
+import HseCover from '@/assets/images/other-works/hse-min.png';
+import HeylamaCover from '@/assets/images/other-works/heylama-min.png';
+
 const works = [
-  { title: 'Saved Messages', routeName: 'SavedMessagesPage' },
-  { title: 'Graphic Design Projects', routeName: 'GraphicDesignPage' },
-  { title: 'UX Solutions For HSE Lyceum', routeName: 'HsePage' },
-  { title: 'Heylama', routeName: 'HeylamaPage' },
+  {
+    title: 'Saved Messages',
+    routeName: 'SavedMessagesPage',
+    poster: SavedCover,
+  },
+  {
+    title: 'Graphic Design Projects',
+    routeName: 'GraphicDesignPage',
+    poster: GraphicCover,
+  },
+  {
+    title: 'UX Solutions For HSE Lyceum',
+    routeName: 'HsePage',
+    poster: HseCover,
+  },
+  { title: 'Heylama', routeName: 'HeylamaPage', poster: HeylamaCover },
 ];
 
 const visibleProjects = ref([]);

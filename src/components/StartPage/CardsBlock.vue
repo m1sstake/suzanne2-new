@@ -15,7 +15,7 @@
 
     <div class="cards__body">
       <div class="cards__item">
-        <div class="cards__item-circle"></div>
+        <IconHeart class="cards__item-icon" />
 
         <div class="cards__item-title">I'm Developer-Friendly</div>
 
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="cards__item">
-        <div class="cards__item-circle"></div>
+        <IconBrain class="cards__item-icon" />
 
         <div class="cards__item-title">
           I'm Proactive <br />
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="cards__item">
-        <div class="cards__item-circle"></div>
+        <IconFinger class="cards__item-icon" />
 
         <div class="cards__item-title">I Don't Point Fingers</div>
 
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="cards__item">
-        <div class="cards__item-circle"></div>
+        <IconTicket class="cards__item-icon" />
 
         <div class="cards__item-title">
           I Create Well-Structured Tickets
@@ -59,7 +59,7 @@
         </div>
       </div>
       <div class="cards__item">
-        <div class="cards__item-circle"></div>
+        <IconQuestion class="cards__item-icon" />
 
         <div class="cards__item-title">
           I Never Leave <br />
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="cards__item">
-        <div class="cards__item-circle"></div>
+        <IconWatch class="cards__item-icon" />
 
         <div class="cards__item-title">I Deliver Work on Time</div>
 
@@ -83,7 +83,7 @@
 
     <div class="cards__transform-wrap">
       <div class="cards__item cards__item-transform">
-        <div class="cards__item-circle"></div>
+        <IconGirl class="cards__item-icon" />
 
         <div class="cards__item-title">I’m Just Nice</div>
 
@@ -97,6 +97,14 @@
 </template>
 <script setup>
 import StartArrow from '@/assets/icons/StartArrow.svg';
+import IconHeart from '@/assets/icons/main-page/IconHeart.svg';
+import IconBrain from '@/assets/icons/main-page/IconBrain.svg';
+import IconFinger from '@/assets/icons/main-page/IconFinger.svg';
+import IconTicket from '@/assets/icons/main-page/IconTicket.svg';
+import IconQuestion from '@/assets/icons/main-page/IconQuestion.svg';
+import IconWatch from '@/assets/icons/main-page/IconWatch.svg';
+import IconGirl from '@/assets/icons/main-page/IconGirl.svg';
+
 import { useIntersectionObserver } from '@vueuse/core';
 import { ref } from 'vue';
 
@@ -154,7 +162,7 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
   padding: var(--space-lg);
   display: flex;
   flex-direction: column;
-  height: 214px;
+  height: 240px;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -206,6 +214,9 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
   position: absolute;
   bottom: -90px;
   left: 300px;
+}
+
+.cards__item-icon {
 }
 
 /***************************************************

@@ -1,7 +1,7 @@
 <template>
   <div class="start__intro">
     <img
-      src="@/assets/images/photo.png"
+      src="@/assets/images/main-avatar.png"
       :alt="$t('name')"
       class="start__photo"
     />
@@ -126,5 +126,10 @@ import IconLogo from '@/assets/icons/logo.svg';
   right: 0;
   margin-right: var(--space-xxl);
   top: 0;
+}
+
+.start__photo {
+  width: 352px;
+  height: 386px;
 }
 </style>

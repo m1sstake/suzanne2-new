@@ -4,10 +4,10 @@
       {{ $t('name') }}
     </div>
 
-    <div
+    <IconEyes
       class="app-menu__square cursor-pointer"
       @click="$router.push('/')"
-    ></div>
+    />
 
     <div class="app-menu__items-wrapper">
       <router-link
@@ -24,6 +24,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
+import IconEyes from '@/assets/icons/IconEyes.svg';
 
 const { t } = useI18n();
 const menuItems = computed(() => [
@@ -40,14 +41,15 @@ const menuItems = computed(() => [
   justify-content: space-between;
   width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .app-menu__square {
-  width: 24px;
-  height: 24px;
   position: absolute;
+  width: 52px;
+  height: 52px;
   left: 50%;
-  background-color: var(--color-text);
+  top: 16%;
 }
 
 .app-menu__logo {

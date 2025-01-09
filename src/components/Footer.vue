@@ -2,7 +2,12 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer-person">
-        <div class="footer-person__img"></div>
+        <div class="footer-person__img">
+          <img
+            src="@/assets/images/footer-picture.png"
+            alt="Suzanna"
+          />
+        </div>
 
         <div class="footer-person__wrapper">
           <div class="footer-person__title">Suzanna Sharanova</div>
@@ -19,14 +24,16 @@
       </div>
 
       <div class="footer-copyright">
-        <div class="footer-copyright__image"></div>
+        <IconEyes class="footer-copyright__image" />
 
         <div class="footer-copyright__text">2025</div>
       </div>
     </div>
   </footer>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import IconEyes from '@/assets/icons/IconEyes.svg';
+</script>
 
 <style>
 .footer {
@@ -96,7 +103,6 @@
 .footer-copyright__image {
   width: 40px;
   height: 40px;
-  background-color: var(--color-border-grey);
   border-radius: 100%;
 }
 

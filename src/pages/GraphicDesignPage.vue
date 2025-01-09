@@ -12,7 +12,7 @@
         forms, shapes, and color.
       </template>
 
-      <template #time> March 2023 - Now</template>
+      <template #time> January 2022 - Now</template>
     </ProjectIntro>
 
     <div class="project__subtitle">Blendo – Perfume Festival</div>
@@ -27,14 +27,26 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl"></div>
-
-    <div class="project__split-images my-md">
-      <div class="project__split-image"></div>
-      <div class="project__split-image"></div>
+    <div class="project__image mt-xl">
+      <img src="@/assets/images/graphic/blendo/blendo-1.png" />
     </div>
 
-    <div class="project__image"></div>
+    <div class="project__split-images my-md">
+      <div class="project__split-image">
+        <img src="@/assets/images/graphic/blendo/blendo-2.png" />
+      </div>
+      <div class="project__split-image">
+        <img src="@/assets/images/graphic/blendo/blendo-3.png" />
+      </div>
+    </div>
+
+    <div class="project__image">
+      <img src="@/assets/images/graphic/blendo/blendo-4.png" />
+    </div>
+
+    <div class="project__image mt-md">
+      <img src="@/assets/images/graphic/blendo/blendo-5.png" />
+    </div>
 
     <div class="project__subtitle">RAW – Concept Beauty Salon</div>
 
@@ -50,33 +62,45 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl"></div>
-    <div class="project__split-images my-md">
-      <div class="project__split-image"></div>
-      <div class="project__split-image"></div>
+    <div class="project__image mt-xl">
+      <img src="@/assets/images/graphic/raw/raw-1.png" />
     </div>
-    <div class="project__image"></div>
     <div class="project__split-images my-md">
-      <div class="project__split-image"></div>
-      <div class="project__split-image"></div>
+      <div class="project__split-image">
+        <img src="@/assets/images/graphic/raw/raw-2.png" />
+      </div>
+      <div class="project__split-image">
+        <img src="@/assets/images/graphic/raw/raw-3.png" />
+      </div>
+    </div>
+    <div class="project__image">
+      <img src="@/assets/images/graphic/raw/raw-4.png" />
+    </div>
+    <div class="project__split-images my-md">
+      <div class="project__split-image">
+        <img src="@/assets/images/graphic/raw/raw-5.png" />
+      </div>
+      <div class="project__split-image">
+        <img src="@/assets/images/graphic/raw/raw-6.png" />
+      </div>
     </div>
 
-    <div class="project__subtitle">“Zdorovie na Ura” Pharmacy Branding</div>
+    <!--    <div class="project__subtitle">“Zdorovie na Ura” Pharmacy Branding</div>-->
 
-    <div class="project__text">
-      A Moscow-based pharmacy chain aimed at creating a light, modern, and
-      approachable brand for a middle-aged and senior audiences. The branding
-      stands out with a fresh turquoise color, breaking away from the typical
-      green used by most Russian pharmacies, and features simple, friendly
-      visuals designed to resonate with the target audience.
-    </div>
+    <!--    <div class="project__text">-->
+    <!--      A Moscow-based pharmacy chain aimed at creating a light, modern, and-->
+    <!--      approachable brand for a middle-aged and senior audiences. The branding-->
+    <!--      stands out with a fresh turquoise color, breaking away from the typical-->
+    <!--      green used by most Russian pharmacies, and features simple, friendly-->
+    <!--      visuals designed to resonate with the target audience.-->
+    <!--    </div>-->
 
-    <div class="project__image mt-xl"></div>
-    <div class="project__split-images my-md">
-      <div class="project__split-image"></div>
-      <div class="project__split-image"></div>
-    </div>
-    <div class="project__image"></div>
+    <!--    <div class="project__image mt-xl"></div>-->
+    <!--    <div class="project__split-images my-md">-->
+    <!--      <div class="project__split-image"></div>-->
+    <!--      <div class="project__split-image"></div>-->
+    <!--    </div>-->
+    <!--    <div class="project__image"></div>-->
 
     <OtherWorks class="mt-xxxxl" />
   </div>

@@ -12,13 +12,20 @@
       <div class="social__info">
         <div class="social__info-item">
           <div class="social__info-text">email</div>
-          <div class="social__info-text">sharanovasuzanna73@gmail.com</div>
-          <div class="social__info-img"></div>
+          <div class="social__info-wrap">
+            <div class="social__info-text">sharanovasuzanna73@gmail.com</div>
+            <IconExport
+              class="social__info-img"
+              @click="linkToEmail"
+            ></IconExport>
+          </div>
         </div>
         <div class="social__info-item">
           <div class="social__info-text">linkedin</div>
-          <div class="social__info-text">open my linkedin profile</div>
-          <div class="social__info-img"></div>
+          <div class="social__info-wrap">
+            <div class="social__info-text">open my linkedin profile</div>
+            <IconExport class="social__info-img"></IconExport>
+          </div>
         </div>
       </div>
     </div>
@@ -26,6 +33,11 @@
 </template>
 <script setup lang="ts">
 import IconLogo from '@/assets/icons/logo.svg';
+import IconExport from '@/assets/icons/IconExport.svg';
+
+function linkToEmail() {
+  window.location.href = 'mailto:sharanovasuzanna73@gmail.com';
+}
 </script>
 <style>
 .social {
@@ -81,9 +93,8 @@ import IconLogo from '@/assets/icons/logo.svg';
 }
 
 .social__info-img {
-  width: 22px;
-  height: 20px;
-  background-color: var(--color-border-grey);
+  transform: translateY(1px);
+  cursor: pointer;
 }
 
 .social__info {
@@ -96,5 +107,10 @@ import IconLogo from '@/assets/icons/logo.svg';
 .social__icon {
   position: absolute;
   right: 180px;
+}
+
+.social__info-wrap {
+  display: flex;
+  gap: var(--space-sm);
 }
 </style>

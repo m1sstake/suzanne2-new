@@ -27,6 +27,7 @@
       :delay="100"
       :duration="500"
     />
+
     <SocialBlock
       id="contacts"
       v-motion
@@ -53,6 +54,13 @@ import ProjectPreview from '@/components/StartPage/ProjectPreview.vue';
 import IntroBlock from '@/components/StartPage/IntroBlock.vue';
 import CardsBlock from '@/components/StartPage/CardsBlock.vue';
 import SocialBlock from '@/components/StartPage/SocialBlock.vue';
+
+import HeylamaCover from '@/assets/images/projects-covers/heylama-cover.png';
+import HseCover from '@/assets/images/projects-covers/hse-cover.png';
+
+import SavedCover from '@/assets/images/projects-covers/saved-cover.jpg';
+import GraphicCover from '@/assets/images/projects-covers/graphic-cover.jpg';
+
 import { useRouter } from 'vue-router';
 
 const projects = [
@@ -69,7 +77,7 @@ const projects = [
       'user flow and scenarious',
       'design system',
     ],
-    image: '',
+    image: HeylamaCover,
     routeName: 'HeylamaPage',
   },
   {
@@ -84,7 +92,7 @@ const projects = [
       'website architecture',
       'UX/UI design',
     ],
-    image: '',
+    image: SavedCover,
     routeName: 'SavedMessagesPage',
   },
   {
@@ -98,7 +106,7 @@ const projects = [
       'brainstorming',
       'user flow and scenarious',
     ],
-    image: '',
+    image: HseCover,
     routeName: 'HsePage',
   },
   {
@@ -113,7 +121,7 @@ const projects = [
       'brand vision and values',
       'brainstorming',
     ],
-    image: '',
+    image: GraphicCover,
     routeName: 'GraphicDesignPage',
   },
 ];

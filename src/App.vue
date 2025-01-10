@@ -29,7 +29,6 @@ body {
   box-sizing: border-box;
 }
 .wrapper {
-  height: 100%;
   min-height: 100%;
   max-width: 1280px;
   margin: 0 auto;

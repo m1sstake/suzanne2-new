@@ -11,3 +11,11 @@
     margin-top: var(--space-xxl);
     margin-bottom: var(--space-xxl);
 }
+
+html, body {
+    height: 100%;
+}
+
+#app {
+    height: inherit;
+}

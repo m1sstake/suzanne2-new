@@ -21,7 +21,13 @@
       <template #time>June 2021 - January 2022</template>
     </ProjectIntro>
 
-    <div class="project__image mt-xxxl"></div>
+    <video
+      src="@/assets/images/hse/2359-1.mp4"
+      class="project__image mt-xxxl"
+      controls
+      autoplay
+      loop
+    ></video>
 
     <div class="project__subtitle">Example task</div>
 
@@ -89,7 +95,13 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl"></div>
+    <video
+      src="@/assets/images/hse/2359-2.mp4"
+      class="project__image mt-xl"
+      controls
+      autoplay
+      loop
+    ></video>
 
     <OtherWorks class="mt-xxxxl" />
   </div>

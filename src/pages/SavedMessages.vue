@@ -26,11 +26,21 @@
     </ProjectIntro>
 
     <div class="project__split-images project__xxxl-margin">
-      <div class="project__split-image"></div>
-      <div class="project__split-image"></div>
+      <div class="project__split-image">
+        <img src="@/assets/images/saved-messages/intro/intro-pic-1.png" />
+      </div>
+      <div class="project__split-image">
+        <img src="@/assets/images/saved-messages/intro/intro-pic-2.png" />
+      </div>
     </div>
 
-    <div class="project__image project__md-margin"></div>
+    <div class="project__image project__md-margin">
+      <img src="@/assets/images/saved-messages/intro/intro-pic-3.png" />
+    </div>
+
+    <div class="project__image project__md-margin">
+      <img src="@/assets/images/saved-messages/intro/intro-pic-4.png" />
+    </div>
 
     <div class="project__subtitle">Problem and goals</div>
 
@@ -91,11 +101,30 @@
       </p>
     </div>
 
-    <div class="project__image max-w-[832px] mt-xl"></div>
+    <div class="saved__interviews max-w-[832px] mt-xl">
+      <img src="@/assets/images/saved-messages/interview/interview-1.gif" />
+      <img src="@/assets/images/saved-messages/interview/interview-2.gif" />
+      <img src="@/assets/images/saved-messages/interview/interview-3.gif" />
+    </div>
 
     <div class="project__subtitle">Interview insights</div>
 
-    <div class="project__image"></div>
+    <div class="project__text">
+      <p class="font-normal">
+        I collected all the insights in Notion, labeling them green if the
+        answer <br />
+        supported <br />
+        the hypothesis and red if it disproved the hypothesis.
+      </p>
+    </div>
+
+    <div class="project__image mt-md">
+      <img
+        src="@/assets/images/saved-messages/interviews-min.png"
+        class="cursor-zoom-in"
+        @click="showImg(0, 'interview')"
+      />
+    </div>
 
     <div class="project__text">
       <p>
@@ -146,7 +175,13 @@
       Customer Journey Map and Future Positioning
     </div>
 
-    <div class="project__image mt-xl"></div>
+    <div class="project__image h-[605px] mt-xl">
+      <img
+        src="@/assets/images/saved-messages/cjm-min.png"
+        class="cursor-zoom-in"
+        @click="showImg(0, 'cjm')"
+      />
+    </div>
 
     <div class="project__subtitle">User flow, Prototyping</div>
 
@@ -159,7 +194,13 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl"></div>
+    <div class="project__image w-[853px] h-[549px] mt-xl">
+      <img
+        src="@/assets/images/saved-messages/user-flow-min.png"
+        class="cursor-zoom-in"
+        @click="showImg(0, 'flow')"
+      />
+    </div>
 
     <div class="project__subtitle">Usability-testing</div>
 
@@ -171,7 +212,9 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl"></div>
+    <div class="project__image w-[700px] h-[389px] mt-xl">
+      <img src="@/assets/images/saved-messages/user-testing.png" />
+    </div>
 
     <div class="project__subtitle">UI Design</div>
 
@@ -184,14 +227,29 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl"></div>
-
     <div class="project__split-images mt-xl w-full">
-      <div class="project__image w-full h-full"></div>
-      <div class="project__image w-full h-full"></div>
+      <div class="project__image w-full h-full">
+        <img src="@/assets/images/saved-messages/design/design-1.png" />
+      </div>
+      <div class="project__image w-full h-full">
+        <img src="@/assets/images/saved-messages/design/design-2.png" />
+      </div>
     </div>
 
-    <div class="project__image mt-md"></div>
+    <div class="project__image mt-md">
+      <img src="@/assets/images/saved-messages/design/design-3.png" />
+    </div>
+
+    <div class="project__image h-[547px] mt-md">
+      <img src="@/assets/images/saved-messages/design/design-4.png" />
+    </div>
+
+    <vue-easy-lightbox
+      :visible="visibleRef"
+      :imgs="galleryImages"
+      :index="indexRef"
+      @hide="onHide"
+    />
 
     <OtherWorks class="mt-xxxxl" />
   </div>
@@ -199,5 +257,45 @@
 <script setup lang="ts">
 import ProjectIntro from '@/components/Projects/ProjectIntro.vue';
 import OtherWorks from '@/components/OtherWorks/OtherWorks.vue';
+import interviewImageMax from '@/assets/images/saved-messages/interviews.png';
+import cjmImageMax from '@/assets/images/saved-messages/cjm.png';
+import userFlowImageMax from '@/assets/images/saved-messages/user-flow.png';
+import { ref, computed } from 'vue';
+
+const visibleRef = ref(false);
+const indexRef = ref(0);
+
+const galleryMode = ref(null);
+
+const interviewImages = computed(() => [interviewImageMax]);
+
+const cjmImages = computed(() => [cjmImageMax]);
+
+const userFlowImages = computed(() => [userFlowImageMax]);
+
+const galleryImages = computed(() => {
+  return {
+    interview: interviewImages.value,
+    cjm: cjmImages.value,
+    flow: userFlowImageMax,
+  }[galleryMode.value];
+});
+
+const showImg = (index, mode) => {
+  indexRef.value = index;
+  galleryMode.value = mode;
+  visibleRef.value = true;
+};
+
+const onHide = () => (visibleRef.value = false);
 </script>
-<style></style>
+<style>
+.saved__interviews {
+  display: flex;
+
+  img {
+    width: 35%;
+    height: 302px;
+  }
+}
+</style>

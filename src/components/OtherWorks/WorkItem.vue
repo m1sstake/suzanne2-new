@@ -6,7 +6,7 @@
     <div class="work-item__poster">
       <img
         v-if="props.poster"
-        class="h-[221px] w-full"
+        class="h-[221px] w-full border-r-sm"
         :src="props.poster"
         :alt="props.title"
       />
@@ -47,7 +47,6 @@ const props = defineProps({
 .work-item__poster {
   max-height: 221px;
   width: 100%;
-  background-color: var(--color-border-grey);
   border-radius: var(--border-radius-sm);
 }
 

@@ -6,8 +6,8 @@
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover
-    ;
+        object-fit: cover;
+        border-radius: 4px;
     }
 }
 
@@ -80,14 +80,13 @@
 }
 
 .project__list li {
-    list-style: circle inside url('@/assets/icons/RedCircle.svg');
+    list-style: inside url('@/assets/icons/RedCircle.svg');
     margin-bottom: var(--space-sm);
+
 }
+
+
 
 .project__list li:last-child {
     margin-bottom: 0;
-}
-
-.project__list li span {
-    margin-left: var(--space-md);
 }

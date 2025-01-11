@@ -59,7 +59,7 @@
         </div>
       </div>
       <div class="cards__item">
-        <IconQuestion class="cards__item-icon" />
+        <IconQuestion class="h-[57px]" />
 
         <div class="cards__item-title">
           I Never Leave <br />
@@ -83,7 +83,7 @@
 
     <div class="cards__transform-wrap">
       <div class="cards__item cards__item-transform">
-        <IconGirl class="cards__item-icon" />
+        <IconGirl />
 
         <div class="cards__item-title">I’m Just Nice</div>
 
@@ -101,7 +101,7 @@ import IconHeart from '@/assets/icons/main-page/IconHeart.svg';
 import IconBrain from '@/assets/icons/main-page/IconBrain.svg';
 import IconFinger from '@/assets/icons/main-page/IconFinger.svg';
 import IconTicket from '@/assets/icons/main-page/IconTicket.svg';
-import IconQuestion from '@/assets/icons/main-page/IconQuestion.svg';
+import IconQuestion from '@/assets/icons/main-page/IconQuestion.svg?component';
 import IconWatch from '@/assets/icons/main-page/IconWatch.svg';
 import IconGirl from '@/assets/icons/main-page/IconGirl.svg';
 
@@ -163,6 +163,7 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
   display: flex;
   flex-direction: column;
   height: 240px;
+  align-items: flex-start;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -214,9 +215,6 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
   position: absolute;
   bottom: -90px;
   left: 300px;
-}
-
-.cards__item-icon {
 }
 
 /***************************************************

@@ -23,7 +23,7 @@
 
     <video
       src="@/assets/images/hse/2359-1.mp4"
-      class="project__image mt-xxxl"
+      class="border-r-md mt-xxxl"
       controls
       autoplay
       loop
@@ -39,7 +39,7 @@
         Member.
       </p>
 
-      <div class="project__bold-title">User Story</div>
+      <div class="project__bold-title mt-xl">User Story</div>
 
       <p>
         <span class="font-bold">As a</span> staff member,<br />
@@ -54,7 +54,7 @@
         Any staff member can add feedback for any student.
       </p>
 
-      <div class="project__bold-title">Elements to include</div>
+      <div class="project__bold-title mt-xl">Elements to include</div>
 
       <ul class="project__list">
         <li><span>An indicator showing if an feedback is new.</span></li>
@@ -97,7 +97,7 @@
 
     <video
       src="@/assets/images/hse/2359-2.mp4"
-      class="project__image mt-xl"
+      class="border-r-md mt-xl"
       controls
       autoplay
       loop

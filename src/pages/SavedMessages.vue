@@ -1,28 +1,24 @@
 <template>
   <div class="page__wrapper">
-    <ProjectIntro role="Designer">
+    <ProjectIntro role="Product Designer">
       <template #title>Saved Messages </template>
 
       <template #about>
-        Heylama AI is a mobile app from the Berlin startup Heylama that helps
-        users learn foreign languages using AI. Heylama Pro is an app designed
-        for language schools in Europe and the U.S., assisting students in
-        reinforcing the language skills they acquire in class through
-        interaction with AI. Made on React Native. <br />
-        Thanks to this project, I was hired to the Heylama app (also in the
+        Saved Messages is an educational tool for intermediate and advanced
+        language learners to read original news and articles, save useful words
+        and phrases, and export them. A pet project. <br />
+        <br />
+        Thanks to this project, I was hired by the Heylama app (also in my
         portfolio). It’s no surprise that this new project is similar in both
-        color scheme and ed-tech direction.
+        color scheme and ed-tech focus.
       </template>
 
       <template #role>
-        Led UX/UI design for Heylama's Consumer and Business apps, from concept
-        to launch on the App Store and Google Play. Maintained design system.
-        Conducted UX researches. Actively participated in brainstorming sessions
-        during the creation of new features. In the first five months, focused
-        on app testing. All communication was conducted in English.
+        UX research (in-depth interviews, competitor analysis, CJM, user flow,
+        usability testing), wireframing, prototyping, site architecture, design.
       </template>
 
-      <template #time> March 2023 - Now</template>
+      <template #time> March 2022 - June 2022</template>
     </ProjectIntro>
 
     <div class="project__split-images project__xxxl-margin">
@@ -74,9 +70,9 @@
         <li><span>Language learners have a study plan.</span></li>
         <li><span>Most aim for a high level of proficiency.</span></li>
         <li>
-          <span>
-            Those taking classes don’t rely solely on their teacher’s materials;
-            they also seek out their own resources.
+          <span
+            >Those taking classes don’t rely solely on their teacher’s
+            materials; they also seek out their own resources.
           </span>
         </li>
         <li>
@@ -113,8 +109,7 @@
       <p class="font-normal">
         I collected all the insights in Notion, labeling them green if the
         answer <br />
-        supported <br />
-        the hypothesis and red if it disproved the hypothesis.
+        supported the hypothesis and red if it disproved the hypothesis.
       </p>
     </div>
 
@@ -209,6 +204,16 @@
         Once the clickable prototype was ready, I conducted 8 usability testing
         sessions with potential users. I assigned them various tasks and
         observed how easily they could complete them.
+      </p>
+
+      <p>
+        After the testing, I reviewed and categorized feedback, noting usability
+        issues. <br />
+        I ranked problems by impact on user experience, implemented changes and
+        <br />
+        conducted a short follow-up testing. I also documented a few insights
+        for future <br />
+        design decisions.
       </p>
     </div>
 

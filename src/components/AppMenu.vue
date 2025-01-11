@@ -1,6 +1,9 @@
 <template>
   <header class="app-menu__wrapper">
-    <div class="app-menu__logo">
+    <div
+      class="app-menu__logo"
+      @click="$router.push('/')"
+    >
       {{ $t('name') }}
     </div>
 
@@ -29,8 +32,8 @@ import IconEyes from '@/assets/icons/IconEyes.svg';
 const { t } = useI18n();
 const menuItems = computed(() => [
   { name: 'main', to: '/' },
-  { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.myCV') },
+  { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.contact'), to: '/#contacts' },
 ]);
 </script>

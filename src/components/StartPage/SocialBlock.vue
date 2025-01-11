@@ -4,7 +4,6 @@
 
     <div class="social__body">
       <div class="social__cv">
-        <IconLogo class="social__icon" />
         <div class="social__block-txt">here’s my CV</div>
 
         <div class="social__img"></div>
@@ -24,7 +23,10 @@
           <div class="social__info-text">linkedin</div>
           <div class="social__info-wrap">
             <div class="social__info-text">open my linkedin profile</div>
-            <IconExport class="social__info-img"></IconExport>
+            <IconExport
+              class="social__info-img"
+              @click="openLinkedinPage"
+            ></IconExport>
           </div>
         </div>
       </div>
@@ -32,11 +34,15 @@
   </div>
 </template>
 <script setup lang="ts">
-import IconLogo from '@/assets/icons/logo.svg';
 import IconExport from '@/assets/icons/IconExport.svg';
 
 function linkToEmail() {
   window.location.href = 'mailto:sharanovasuzanna73@gmail.com';
+}
+
+function openLinkedinPage() {
+  window.location.href =
+    'https://www.linkedin.com/in/suzanne-sharanova-b16563234/';
 }
 </script>
 <style>

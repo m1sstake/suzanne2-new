@@ -99,7 +99,7 @@
         >
       </p>
 
-      <div class="project__bold-title">What we’ve done</div>
+      <div class="project__bold-title mt-xl">What we’ve done</div>
 
       <p>
         Conversational practice with AI, personalized vocabulary suggestions

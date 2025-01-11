@@ -46,6 +46,7 @@ const props = defineProps({
 
 .work-item__poster {
   max-height: 221px;
+  min-width: 321px;
   width: 100%;
   border-radius: var(--border-radius-sm);
 }
@@ -64,6 +65,7 @@ const props = defineProps({
   justify-content: space-between;
   margin-top: auto;
   align-items: center;
+  transition: color 0.3s;
 }
 
 .work-item__description {
@@ -71,5 +73,9 @@ const props = defineProps({
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+}
+
+.work-item__bottom-wrap:hover {
+  color: var(--color-links-blue);
 }
 </style>

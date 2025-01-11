@@ -1,26 +1,33 @@
 <template>
   <footer class="footer">
     <div class="footer__inner">
-      <div class="footer-person">
+      <div
+        class="footer-person"
+        @click="$router.push('/')"
+      >
         <div class="footer-person__img">
           <img
             src="@/assets/images/footer-picture.png"
-            alt="Suzanna"
+            alt="Syuzanna"
           />
         </div>
 
         <div class="footer-person__wrapper">
-          <div class="footer-person__title">Suzanna Sharanova</div>
+          <div class="footer-person__title">Syuzanna Sharanova</div>
 
-          <div class="footer-person__subtitle">Product Designer</div>
+          <div class="footer-person__subtitle">UX/UI Designer</div>
         </div>
       </div>
 
       <div class="footer-menu">
-        <div class="footer-menu__item">works</div>
-        <div class="footer-menu__item">about me</div>
-        <div class="footer-menu__item">my cv</div>
-        <div class="footer-menu__item">contact</div>
+        <router-link
+          v-for="(item, i) in menuItems"
+          :key="i"
+          class="footer-menu__item"
+          :to="item.to"
+        >
+          {{ item.name }}
+        </router-link>
       </div>
 
       <div class="footer-copyright">
@@ -33,6 +40,16 @@
 </template>
 <script setup lang="ts">
 import IconEyes from '@/assets/icons/IconEyes.svg';
+import { computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+const menuItems = computed(() => [
+  { name: 'main', to: '/' },
+  { name: t('menu.myCV') },
+  { name: t('menu.aboutMe'), to: '/#about' },
+  { name: t('menu.contact'), to: '/#contacts' },
+]);
 </script>
 
 <style>

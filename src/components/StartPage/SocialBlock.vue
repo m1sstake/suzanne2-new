@@ -18,11 +18,11 @@
           class="social__img"
         />
       </div>
-      <div
-        class="social__info"
-        @click="linkToEmail"
-      >
-        <div class="social__info-item">
+      <div class="social__info">
+        <div
+          class="social__info-item"
+          @click="linkToEmail"
+        >
           <div class="social__info-text">email</div>
           <div class="social__info-wrap">
             <div class="social__info-text">sharanovasuzanna73@gmail.com</div>
@@ -48,7 +48,7 @@ import IconExport from '@/assets/icons/IconExport.svg';
 import cvPDF from '@/assets/files/cv.pdf';
 
 function linkToEmail() {
-  window.location.href = 'mailto:sharanovasuzanna73@gmail.com';
+  window.open('mailto:sharanovasuzanna73@gmail.com', '_blank');
 }
 
 function openLinkedinPage() {

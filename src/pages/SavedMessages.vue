@@ -115,7 +115,7 @@
 
     <div class="project__image mt-md">
       <img
-        src="@/assets/images/saved-messages/interviews-min.png"
+        src="@/assets/images/saved-messages/interviews.jpg"
         class="cursor-zoom-in"
         @click="showImg(0, 'interview')"
       />

@@ -76,6 +76,7 @@ const props = defineProps({
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+  transition: color 0.3s;
 }
 
 .project-preview__info-wrap {
@@ -128,5 +129,9 @@ const props = defineProps({
   font-weight: 400;
   line-height: 30px;
   display: inline-block;
+}
+
+.project-preview:hover .project-preview__title {
+  color: var(--color-links-blue);
 }
 </style>

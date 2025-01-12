@@ -49,6 +49,7 @@ const props = defineProps({
   min-width: 321px;
   width: 100%;
   border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease-in-out;
 }
 
 .work-item__title {
@@ -75,7 +76,11 @@ const props = defineProps({
   line-height: 26px;
 }
 
-.work-item__bottom-wrap:hover {
+.work-item:hover .work-item__bottom-wrap {
   color: var(--color-links-blue);
+}
+
+.work-item:hover .work-item__poster {
+  transform: scale(1.015);
 }
 </style>

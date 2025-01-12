@@ -1,6 +1,9 @@
 <template>
   <div class="page__wrapper">
-    <ProjectIntro role="Graphic Designer, Illustartor">
+    <ProjectIntro
+      v-motion-fade
+      role="Graphic Designer, Illustartor"
+    >
       <template #title
         >Graphic Design <br />
         Projects
@@ -15,9 +18,17 @@
       <template #time> 2023 - 2024</template>
     </ProjectIntro>
 
-    <div class="project__subtitle">Blendo – Perfume Festival</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Blendo – Perfume Festival
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         Blendo Perfume Festival is an event for fragrance enthusiasts and those
         seeking personalized scents that reflect their unique story and style.
@@ -27,11 +38,17 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl">
+    <div
+      v-motion-fade
+      class="project__image mt-xl"
+    >
       <img src="@/assets/images/graphic/blendo/blendo-1.png" />
     </div>
 
-    <div class="project__split-images my-md">
+    <div
+      v-motion-fade
+      class="project__split-images my-md"
+    >
       <div class="project__split-image">
         <img src="@/assets/images/graphic/blendo/blendo-2.png" />
       </div>
@@ -40,17 +57,31 @@
       </div>
     </div>
 
-    <div class="project__image">
+    <div
+      v-motion-fade
+      class="project__image"
+    >
       <img src="@/assets/images/graphic/blendo/blendo-4.png" />
     </div>
 
-    <div class="project__image mt-md">
+    <div
+      v-motion-fade
+      class="project__image mt-md"
+    >
       <img src="@/assets/images/graphic/blendo/blendo-5.png" />
     </div>
 
-    <div class="project__subtitle">RAW – Concept Beauty Salon</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      RAW – Concept Beauty Salon
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         A conceptual beauty salon located in the city forest, "Raw" emphasizes
         the natural essence of human beauty. Warm, nature-inspired visuals and
@@ -62,10 +93,16 @@
       </p>
     </div>
 
-    <div class="project__image mt-xl">
+    <div
+      v-motion-fade
+      class="project__image mt-xl"
+    >
       <img src="@/assets/images/graphic/raw/raw-1.png" />
     </div>
-    <div class="project__split-images my-md">
+    <div
+      v-motion-fade
+      class="project__split-images my-md"
+    >
       <div class="project__split-image">
         <img src="@/assets/images/graphic/raw/raw-2.png" />
       </div>
@@ -73,10 +110,16 @@
         <img src="@/assets/images/graphic/raw/raw-3.png" />
       </div>
     </div>
-    <div class="project__image">
+    <div
+      v-motion-fade
+      class="project__image"
+    >
       <img src="@/assets/images/graphic/raw/raw-4.png" />
     </div>
-    <div class="project__split-images my-md">
+    <div
+      v-motion-fade
+      class="project__split-images my-md"
+    >
       <div class="project__split-image">
         <img src="@/assets/images/graphic/raw/raw-5.png" />
       </div>

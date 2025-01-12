@@ -1,6 +1,9 @@
 <template>
   <div class="page__wrapper">
-    <ProjectIntro role="Product Designer">
+    <ProjectIntro
+      v-motion-fade
+      role="Product Designer"
+    >
       <template #title>
         UX Solutions <br />
         for HSE Lyceum
@@ -22,6 +25,7 @@
     </ProjectIntro>
 
     <video
+      v-motion-fade
       src="@/assets/images/hse/2359-1.mp4"
       class="border-r-md mt-xxxl"
       controls
@@ -29,9 +33,17 @@
       loop
     ></video>
 
-    <div class="project__subtitle">Example task</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Example task
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <div class="project__bold-title">Name and Roles</div>
 
       <p>
@@ -80,9 +92,17 @@
       </ul>
     </div>
 
-    <div class="project__subtitle">My approach</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      My approach
+    </div>
 
-    <div class="project__text w-[65%]">
+    <div
+      v-motion-fade
+      class="project__text w-[65%]"
+    >
       <p>
         I focused on understanding the needs of curators and staff, organizing
         information in a clear hierarchy—with quick actions in the top section
@@ -96,6 +116,7 @@
     </div>
 
     <video
+      v-motion-fade
       src="@/assets/images/hse/2359-2.mp4"
       class="border-r-md mt-xl"
       controls

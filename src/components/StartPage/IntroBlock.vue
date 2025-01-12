@@ -128,7 +128,7 @@ import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
 
 .start__logo {
   position: absolute;
-  right: 0;
+  right: -120px;
   margin-right: var(--space-xxl);
   top: -20px;
 }

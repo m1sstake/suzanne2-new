@@ -1,6 +1,9 @@
 <template>
   <div class="page__wrapper">
-    <ProjectIntro role="Product Designer">
+    <ProjectIntro
+      v-motion-fade
+      role="Product Designer"
+    >
       <template #title>Saved Messages </template>
 
       <template #about>
@@ -21,7 +24,10 @@
       <template #time> March 2022 - June 2022</template>
     </ProjectIntro>
 
-    <div class="project__split-images project__xxxl-margin">
+    <div
+      v-motion-fade
+      class="project__split-images project__xxxl-margin"
+    >
       <div class="project__split-image">
         <img src="@/assets/images/saved-messages/intro/intro-pic-1.png" />
       </div>
@@ -30,17 +36,31 @@
       </div>
     </div>
 
-    <div class="project__image project__md-margin">
+    <div
+      v-motion-fade
+      class="project__image project__md-margin"
+    >
       <img src="@/assets/images/saved-messages/intro/intro-pic-3.png" />
     </div>
 
-    <div class="project__image project__md-margin">
+    <div
+      v-motion-fade
+      class="project__image project__md-margin"
+    >
       <img src="@/assets/images/saved-messages/intro/intro-pic-4.png" />
     </div>
 
-    <div class="project__subtitle">Problem and goals</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Problem and goals
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         While studying languages, I realized
         <span class="text-accent-red">
@@ -63,9 +83,17 @@
       </p>
     </div>
 
-    <div class="project__subtitle">Hypothesis and interviews</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Hypothesis and interviews
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <ul class="project__list">
         <li><span>Language learners have a study plan.</span></li>
         <li><span>Most aim for a high level of proficiency.</span></li>
@@ -97,15 +125,26 @@
       </p>
     </div>
 
-    <div class="saved__interviews max-w-[832px] mt-xl">
+    <div
+      v-motion-fade
+      class="saved__interviews max-w-[832px] mt-xl"
+    >
       <img src="@/assets/images/saved-messages/interview/interview-1.gif" />
       <img src="@/assets/images/saved-messages/interview/interview-2.gif" />
       <img src="@/assets/images/saved-messages/interview/interview-3.gif" />
     </div>
 
-    <div class="project__subtitle">Interview insights</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Interview insights
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p class="font-normal">
         I collected all the insights in Notion, labeling them green if the
         answer <br />
@@ -113,7 +152,10 @@
       </p>
     </div>
 
-    <div class="project__image mt-md">
+    <div
+      v-motion-fade
+      class="project__image mt-md"
+    >
       <img
         src="@/assets/images/saved-messages/interviews.jpg"
         class="cursor-zoom-in"
@@ -121,7 +163,10 @@
       />
     </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         <span class="font-semibold">
           At the end of the table, I outlined user challenges in advanced
@@ -154,9 +199,17 @@
       </ul>
     </div>
 
-    <div class="project__subtitle">Competitors research</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Competitors research
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         From the interviews, I identified user pain points my service will
         address: finding relevant vocabulary and improving reading, listening,
@@ -166,21 +219,35 @@
       </p>
     </div>
 
-    <div class="project__subtitle">
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
       Customer Journey Map and Future Positioning
     </div>
 
-    <div class="project__image h-[605px] mt-xl">
+    <div
+      v-motion-fade
+      class="project__image h-[605px] mt-xl"
+    >
       <img
-        src="@/assets/images/saved-messages/cjm-min.png"
+        src="@/assets/images/saved-messages/cjm.jpg"
         class="cursor-zoom-in"
         @click="showImg(0, 'cjm')"
       />
     </div>
 
-    <div class="project__subtitle">User flow, Prototyping</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      User flow, Prototyping
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         The main content on Saved Messages includes articles, news, and
         podcasts. On the content page, users can highlight any words or phrases
@@ -189,17 +256,28 @@
       </p>
     </div>
 
-    <div class="project__image w-[853px] h-[549px] mt-xl">
+    <div
+      v-motion-fade
+      class="project__image mt-xl"
+    >
       <img
-        src="@/assets/images/saved-messages/user-flow-min.png"
+        src="@/assets/images/saved-messages/user-flow.png"
         class="cursor-zoom-in"
         @click="showImg(0, 'flow')"
       />
     </div>
 
-    <div class="project__subtitle">Usability-testing</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Usability-testing
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         Once the clickable prototype was ready, I conducted 8 usability testing
         sessions with potential users. I assigned them various tasks and
@@ -217,13 +295,24 @@
       </p>
     </div>
 
-    <div class="project__image w-[700px] h-[389px] mt-xl">
+    <div
+      v-motion-fade
+      class="project__image w-[700px] h-[389px] mt-xl"
+    >
       <img src="@/assets/images/saved-messages/user-testing.png" />
     </div>
 
-    <div class="project__subtitle">UI Design</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      UI Design
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         I saw media content—news, articles, videos, podcasts—as a constant
         stream of "messages," fragments of knowledge shaping our view of the
@@ -232,7 +321,10 @@
       </p>
     </div>
 
-    <div class="project__split-images mt-xl w-full">
+    <div
+      v-motion-fade
+      class="project__split-images mt-xl w-full"
+    >
       <div class="project__image w-full h-full">
         <img src="@/assets/images/saved-messages/design/design-1.png" />
       </div>
@@ -241,11 +333,17 @@
       </div>
     </div>
 
-    <div class="project__image mt-md">
+    <div
+      v-motion-fade
+      class="project__image mt-md"
+    >
       <img src="@/assets/images/saved-messages/design/design-3.png" />
     </div>
 
-    <div class="project__image h-[547px] mt-md">
+    <div
+      v-motion-fade
+      class="project__image h-[547px] mt-md"
+    >
       <img src="@/assets/images/saved-messages/design/design-4.png" />
     </div>
 
@@ -264,7 +362,7 @@ import ProjectIntro from '@/components/Projects/ProjectIntro.vue';
 import OtherWorks from '@/components/OtherWorks/OtherWorks.vue';
 import interviewImageMax from '@/assets/images/saved-messages/interviews.jpg';
 import cjmImageMax from '@/assets/images/saved-messages/cjm.jpg';
-import userFlowImageMax from '@/assets/images/saved-messages/user-flow.jpg';
+import userFlowImageMax from '@/assets/images/saved-messages/user-flow.png';
 import { ref, computed } from 'vue';
 
 const visibleRef = ref(false);

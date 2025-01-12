@@ -56,6 +56,7 @@ const props = defineProps({
   height: 528px;
   background-color: var(--color-border-grey);
   border-radius: 4px;
+  transition: all 0.3s ease-in-out;
 
   img {
     width: 100%;
@@ -133,5 +134,9 @@ const props = defineProps({
 
 .project-preview:hover .project-preview__title {
   color: var(--color-links-blue);
+}
+
+.project-preview:hover .project-preview__poster {
+  transform: scale(1.015);
 }
 </style>

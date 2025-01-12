@@ -7,7 +7,10 @@
         class="social__cv"
         @click="linkToCV"
       >
-        <div class="social__block-txt">here’s my CV</div>
+        <div class="social__info-wrap">
+          <div class="social__info-text">here’s my CV</div>
+          <IconExport class="social__info-img"></IconExport>
+        </div>
 
         <img
           src="@/assets/images/mini-cv.jpg"
@@ -93,11 +96,12 @@ function linkToCV() {
   height: 100%;
   background-color: var(--color-white);
   border-radius: 4px;
-  transition: color 0.3s;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
     color: var(--color-links-blue);
+    transform: scale(1.015);
   }
 }
 
@@ -110,11 +114,12 @@ function linkToCV() {
   box-sizing: border-box;
   background-color: var(--color-white);
   border-radius: 4px;
-  transition: color 0.3s;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
     color: var(--color-links-blue);
+    transform: scale(1.015);
   }
 }
 

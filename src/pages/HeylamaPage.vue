@@ -227,7 +227,10 @@
       </p>
     </div>
 
-    <div class="project__split-images mt-xl w-full">
+    <div
+      v-motion-fade
+      class="project__split-images mt-xl w-full"
+    >
       <div class="project__image w-full h-full">
         <img src="@/assets/images/heylama/real-time-1.png" />
       </div>

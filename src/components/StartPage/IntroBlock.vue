@@ -107,7 +107,7 @@ import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 .start__info-description {

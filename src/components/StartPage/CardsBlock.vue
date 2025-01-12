@@ -49,10 +49,7 @@
       <div class="cards__item">
         <IconTicket class="cards__item-icon" />
 
-        <div class="cards__item-title">
-          I Create Well-Structured Tickets
-          <a class="cards__item-link"> See Examples </a>
-        </div>
+        <div class="cards__item-title">I Create Well-Structured Tickets</div>
 
         <div class="cards__item-description">
           My tickets for design decisions are clear and easy to understand.
@@ -101,7 +98,7 @@ import IconHeart from '@/assets/icons/main-page/IconHeart.svg';
 import IconBrain from '@/assets/icons/main-page/IconBrain.svg';
 import IconFinger from '@/assets/icons/main-page/IconFinger.svg';
 import IconTicket from '@/assets/icons/main-page/IconTicket.svg';
-import IconQuestion from '@/assets/icons/main-page/IconQuestion.svg?component';
+import IconQuestion from '@/assets/icons/main-page/IconQuestion.svg';
 import IconWatch from '@/assets/icons/main-page/IconWatch.svg';
 import IconGirl from '@/assets/icons/main-page/IconGirl.svg';
 

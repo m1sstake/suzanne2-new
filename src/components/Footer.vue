@@ -20,14 +20,23 @@
       </div>
 
       <div class="footer-menu">
-        <router-link
+        <!--        <template-->
+        <!--          v-for="(item, i) in menuItems"-->
+        <!--          :key="i"-->
+        <!--        >-->
+        <!--          -->
+        <!--        </template>-->
+        <component
+          :is="item.to ? 'router-link' : 'a'"
           v-for="(item, i) in menuItems"
           :key="i"
           class="footer-menu__item"
           :to="item.to"
+          :href="item.link"
+          :target="item.to ? '_self' : '_blank'"
         >
           {{ item.name }}
-        </router-link>
+        </component>
       </div>
 
       <div class="footer-copyright">
@@ -42,11 +51,12 @@
 import IconEyes from '@/assets/icons/IconEyes.svg';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import cvPDF from '@/assets/files/cv.pdf';
 
 const { t } = useI18n();
 const menuItems = computed(() => [
   { name: 'main', to: '/' },
-  { name: t('menu.myCV') },
+  { name: t('menu.myCV'), link: cvPDF },
   { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.contact'), to: '/#contacts' },
 ]);
@@ -131,7 +141,7 @@ const menuItems = computed(() => [
   cursor: pointer;
 
   &:hover {
-    color: var(--color-accent-red);
+    color: var(--color-links-blue);
   }
 }
 </style>

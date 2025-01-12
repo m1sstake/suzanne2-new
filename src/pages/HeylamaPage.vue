@@ -19,7 +19,7 @@
         on app testing. All communication was conducted in English.
       </template>
 
-      <template #time> March 2023 - Now</template>
+      <template #time> March 2023 - January 2025</template>
     </ProjectIntro>
 
     <div class="project__image project__xxxl-margin">

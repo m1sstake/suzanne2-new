@@ -55,7 +55,7 @@ import IntroBlock from '@/components/StartPage/IntroBlock.vue';
 import CardsBlock from '@/components/StartPage/CardsBlock.vue';
 import SocialBlock from '@/components/StartPage/SocialBlock.vue';
 
-import HeylamaCover from '@/assets/images/projects-covers/heylama-cover.png';
+import HeylamaCover from '@/assets/images/projects-covers/heylama-cover.jpg';
 import HseCover from '@/assets/images/projects-covers/hse-cover.png';
 
 import SavedCover from '@/assets/images/projects-covers/saved-cover.jpg';
@@ -68,7 +68,7 @@ const projects = [
     name: 'Heylama AI Language School',
     description:
       'A mobile app from the Berlin startup Heylama that helps users learn foreign languages with AI.',
-    date: '2023 – now',
+    date: '2023 – 2025',
     tags: [
       'product design from scratch',
       'wireframing and sketching',

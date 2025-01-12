@@ -262,9 +262,9 @@
 <script setup lang="ts">
 import ProjectIntro from '@/components/Projects/ProjectIntro.vue';
 import OtherWorks from '@/components/OtherWorks/OtherWorks.vue';
-import interviewImageMax from '@/assets/images/saved-messages/interviews.png';
-import cjmImageMax from '@/assets/images/saved-messages/cjm.png';
-import userFlowImageMax from '@/assets/images/saved-messages/user-flow.png';
+import interviewImageMax from '@/assets/images/saved-messages/interviews.jpg';
+import cjmImageMax from '@/assets/images/saved-messages/cjm.jpg';
+import userFlowImageMax from '@/assets/images/saved-messages/user-flow.jpg';
 import { ref, computed } from 'vue';
 
 const visibleRef = ref(false);
@@ -282,7 +282,7 @@ const galleryImages = computed(() => {
   return {
     interview: interviewImages.value,
     cjm: cjmImages.value,
-    flow: userFlowImageMax,
+    flow: userFlowImages.value,
   }[galleryMode.value];
 });
 

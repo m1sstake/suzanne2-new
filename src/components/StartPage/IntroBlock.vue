@@ -29,9 +29,9 @@
     </div>
 
     <div class="start__info">
-      <IconLogo class="start__logo" />
+      <IconFlower class="start__logo" />
 
-      <div class="start__info-title">Hi, I’m Susan, a Product Designer</div>
+      <div class="start__info-title">Hi, I’m Susan, a UX/UI Designer</div>
 
       <div class="start__info-description">
         <p>
@@ -51,7 +51,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import IconLogo from '@/assets/icons/logo.svg';
+import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
 </script>
 <style>
 .start__intro {
@@ -125,7 +125,7 @@ import IconLogo from '@/assets/icons/logo.svg';
   position: absolute;
   right: 0;
   margin-right: var(--space-xxl);
-  top: 0;
+  top: -20px;
 }
 
 .start__photo {

@@ -52,6 +52,7 @@ const props = defineProps({
 
 .project-preview__poster {
   min-width: 716px;
+  max-width: 716px;
   height: 528px;
   background-color: var(--color-border-grey);
   border-radius: 4px;
@@ -60,6 +61,7 @@ const props = defineProps({
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
   }
 }
 

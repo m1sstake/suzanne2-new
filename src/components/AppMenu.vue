@@ -13,14 +13,17 @@
     />
 
     <div class="app-menu__items-wrapper">
-      <router-link
+      <component
+        :is="item.to ? 'router-link' : 'a'"
         v-for="(item, i) in menuItems"
         :key="i"
         class="app-menu__item"
         :to="item.to"
+        :href="item.link"
+        :target="item.to ? '_self' : '_blank'"
       >
         {{ item.name }}
-      </router-link>
+      </component>
     </div>
   </header>
 </template>
@@ -28,11 +31,12 @@
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
 import IconEyes from '@/assets/icons/IconEyes.svg';
+import cvPDF from '@/assets/files/cv.pdf';
 
 const { t } = useI18n();
 const menuItems = computed(() => [
   { name: 'main', to: '/' },
-  { name: t('menu.myCV') },
+  { name: t('menu.myCV'), link: cvPDF },
   { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.contact'), to: '/#contacts' },
 ]);
@@ -60,6 +64,7 @@ const menuItems = computed(() => [
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .app-menu__items-wrapper {
@@ -75,7 +80,7 @@ const menuItems = computed(() => [
   cursor: pointer;
 
   &:hover {
-    color: var(--color-accent-red);
+    color: var(--color-links-blue);
   }
 }
 </style>

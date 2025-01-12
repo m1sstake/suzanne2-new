@@ -3,30 +3,37 @@
     <div class="social__title">So...</div>
 
     <div class="social__body">
-      <div class="social__cv">
+      <div
+        class="social__cv"
+        @click="linkToCV"
+      >
         <div class="social__block-txt">here’s my CV</div>
 
-        <div class="social__img"></div>
+        <img
+          src="@/assets/images/mini-cv.jpg"
+          alt="cv"
+          class="social__img"
+        />
       </div>
-      <div class="social__info">
+      <div
+        class="social__info"
+        @click="linkToEmail"
+      >
         <div class="social__info-item">
           <div class="social__info-text">email</div>
           <div class="social__info-wrap">
             <div class="social__info-text">sharanovasuzanna73@gmail.com</div>
-            <IconExport
-              class="social__info-img"
-              @click="linkToEmail"
-            ></IconExport>
+            <IconExport class="social__info-img"></IconExport>
           </div>
         </div>
-        <div class="social__info-item">
+        <div
+          class="social__info-item"
+          @click="openLinkedinPage"
+        >
           <div class="social__info-text">linkedin</div>
           <div class="social__info-wrap">
             <div class="social__info-text">open my linkedin profile</div>
-            <IconExport
-              class="social__info-img"
-              @click="openLinkedinPage"
-            ></IconExport>
+            <IconExport class="social__info-img"></IconExport>
           </div>
         </div>
       </div>
@@ -35,14 +42,21 @@
 </template>
 <script setup lang="ts">
 import IconExport from '@/assets/icons/IconExport.svg';
+import cvPDF from '@/assets/files/cv.pdf';
 
 function linkToEmail() {
   window.location.href = 'mailto:sharanovasuzanna73@gmail.com';
 }
 
 function openLinkedinPage() {
-  window.location.href =
-    'https://www.linkedin.com/in/suzanne-sharanova-b16563234/';
+  window.open(
+    'https://www.linkedin.com/in/suzanne-sharanova-b16563234/',
+    '_blank',
+  );
+}
+
+function linkToCV() {
+  window.open(cvPDF, '_blank');
 }
 </script>
 <style>
@@ -79,6 +93,12 @@ function openLinkedinPage() {
   height: 100%;
   background-color: var(--color-white);
   border-radius: 4px;
+  transition: color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-links-blue);
+  }
 }
 
 .social__cv {
@@ -90,12 +110,19 @@ function openLinkedinPage() {
   box-sizing: border-box;
   background-color: var(--color-white);
   border-radius: 4px;
+  transition: color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-links-blue);
+  }
 }
 
 .social__img {
-  height: 252px;
-  width: 200px;
+  max-height: 252px;
+  width: 169px;
   background-color: var(--color-border-grey);
+  border-radius: 4px;
 }
 
 .social__info-img {

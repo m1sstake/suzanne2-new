@@ -118,7 +118,7 @@ import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
   color: var(--color-text-gray);
 
   p {
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
   }
 
   p:last-child {

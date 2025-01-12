@@ -12,7 +12,7 @@
         forms, shapes, and color.
       </template>
 
-      <template #time> January 2022 - Now</template>
+      <template #time> 2023 - 2024</template>
     </ProjectIntro>
 
     <div class="project__subtitle">Blendo – Perfume Festival</div>

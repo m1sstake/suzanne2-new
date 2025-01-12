@@ -1,16 +1,12 @@
 <template>
   <div class="page__wrapper">
-    <IntroBlock />
+    <IntroBlock v-motion-fade />
 
     <div class="start__projects">
       <ProjectPreview
         v-for="(project, i) in projects"
         :key="i"
-        v-motion
-        :initial="{ opacity: 0, y: 100 }"
-        :visible="{ opacity: 1, y: 0 }"
-        :delay="100"
-        :duration="1200"
+        v-motion-fade
         :title="project.name"
         :description="project.description"
         :date="project.date"
@@ -20,29 +16,15 @@
       />
     </div>
 
-    <CardsBlock
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visible="{ opacity: 1, y: 0 }"
-      :delay="100"
-      :duration="500"
-    />
+    <CardsBlock v-motion-fade />
 
     <SocialBlock
       id="contacts"
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visible="{ opacity: 1, y: 0 }"
-      :delay="100"
-      :duration="500"
+      v-motion-fade
     />
 
     <div
-      v-motion
-      :initial="{ opacity: 0, y: 100 }"
-      :visible="{ opacity: 1, y: 0 }"
-      :delay="100"
-      :duration="500"
+      v-motion-fade
       class="start__footer-title"
     >
       Looking forward to hearing from you!

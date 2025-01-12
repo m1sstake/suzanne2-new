@@ -1,6 +1,9 @@
 <template>
   <div class="page__wrapper">
-    <ProjectIntro role="Designer">
+    <ProjectIntro
+      v-motion-fade
+      role="Designer"
+    >
       <template #title>Heylama AI </template>
 
       <template #about>
@@ -22,14 +25,20 @@
       <template #time> March 2023 - January 2025</template>
     </ProjectIntro>
 
-    <div class="project__image project__xxxl-margin">
+    <div
+      v-motion-fade
+      class="project__image project__xxxl-margin"
+    >
       <img
         src="@/assets/images/heylama/intro-1.png"
         alt="intro-1"
       />
     </div>
 
-    <div class="project__split-images project__md-margin">
+    <div
+      v-motion-fade
+      class="project__split-images project__md-margin"
+    >
       <div class="project__split-image">
         <img
           src="@/assets/images/heylama/intro-2.png"
@@ -44,9 +53,17 @@
       </div>
     </div>
 
-    <div class="project__subtitle">Project Overview</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Project Overview
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <p>
         Heylama AI is an innovative language learning app designed to help users
         enhance their linguistic skills through personalized and interactive
@@ -66,9 +83,17 @@
       </span>
     </div>
 
-    <div class="project__subtitle">My responsibilities</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      My responsibilities
+    </div>
 
-    <div class="heylama__tags">
+    <div
+      v-motion-fade
+      class="heylama__tags"
+    >
       <Tag
         v-for="(tag, i) in tags"
         :key="i"
@@ -76,12 +101,18 @@
       />
     </div>
 
-    <div class="project__subtitle">
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
       Personalization <br />
       and Self-Directed Learning
     </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <div class="project__bold-title">Process</div>
 
       <p>
@@ -110,7 +141,10 @@
       </p>
     </div>
 
-    <div class="heylama__images mt-xl h-[1084px]">
+    <div
+      v-motion-fade
+      class="heylama__images mt-xl h-[1084px]"
+    >
       <div class="project__image h-full">
         <img
           src="@/assets/images/heylama/personalization-1.png"
@@ -133,9 +167,17 @@
       </div>
     </div>
 
-    <div class="project__subtitle">Memory and Retention</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Memory and Retention
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <div class="project__bold-title">Process</div>
 
       <p>
@@ -149,7 +191,10 @@
       </p>
     </div>
 
-    <div class="project__split-images mt-xl w-full">
+    <div
+      v-motion-fade
+      class="project__split-images mt-xl w-full"
+    >
       <div class="project__image w-full h-full">
         <img src="@/assets/images/heylama/memory-1.png" />
       </div>
@@ -158,9 +203,17 @@
       </div>
     </div>
 
-    <div class="project__subtitle">Real-Time Feedback and Suggestions</div>
+    <div
+      v-motion-fade
+      class="project__subtitle"
+    >
+      Real-Time Feedback and Suggestions
+    </div>
 
-    <div class="project__text">
+    <div
+      v-motion-fade
+      class="project__text"
+    >
       <div class="project__bold-title">Process</div>
 
       <p>

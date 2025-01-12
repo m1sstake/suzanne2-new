@@ -35,16 +35,21 @@
 
       <div class="start__info-description">
         <p>
-          I'm 26 years old, based in Tbilisi, Georgia. I've worked <br />
-          on russian and international digital products, and currently, <br />
-          I'm a product designer at the Berlin ed-tech startup Heylama. <br />
+          Hi, I’m Susan, a 26-year-old UX/UI designer from Tbilisi, Georgia.
+          <br />
+          With experience in both international and Russian markets, I’ve worked
+          <br />
+          across startups and larger companies.
         </p>
 
         <p>
-          For me, design is all about creating smart, sustainable solutions
+          I specialize in creating intuitive, high-impact designs that drive
+          user <br />
+          engagement and business growth. My process is data-driven, focused
           <br />
-          that make the world a more comfortable and visually appealing <br />
-          place to live in.
+          on user research and testing to ensure the best outcomes. I adapt
+          <br />
+          quickly to challenges and deliver scalable solutions.
         </p>
       </div>
     </div>

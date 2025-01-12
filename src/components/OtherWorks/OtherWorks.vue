@@ -1,5 +1,8 @@
 <template>
-  <div class="other-works">
+  <div
+    v-motion-fade
+    class="other-works"
+  >
     <div class="other-works__title">Other works</div>
 
     <div class="other-works__body">

@@ -45,7 +45,7 @@
 </template>
 <script setup lang="ts">
 import IconExport from '@/assets/icons/IconExport.svg';
-import cvPDF from '@/assets/files/cv.pdf';
+import cvPDF from '@/assets/files/cv_2.pdf';
 
 function linkToEmail() {
   window.open('mailto:sharanovasuzanna73@gmail.com', '_blank');

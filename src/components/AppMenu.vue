@@ -31,7 +31,7 @@
 import { useI18n } from 'vue-i18n';
 import { computed } from 'vue';
 import IconEyes from '@/assets/icons/IconEyes.svg';
-import cvPDF from '@/assets/files/cv.pdf';
+import cvPDF from '@/assets/files/cv_2.pdf';
 
 const { t } = useI18n();
 const menuItems = computed(() => [

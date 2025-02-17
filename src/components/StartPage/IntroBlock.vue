@@ -13,7 +13,7 @@
       </div>
       <div>
         <div class="start__stat">
-          <span class="start__stat-title">Georgia</span>
+          <span class="start__stat-title">Moscow</span>
           <span class="start__stat-value">currently based</span>
         </div>
       </div>
@@ -35,7 +35,7 @@
 
       <div class="start__info-description">
         <p>
-          Hi, I’m Susan, a 26-year-old UX/UI designer from Tbilisi, Georgia.
+          Hi, I’m Susan, a 26-year-old UX/UI designer from Moscow, Russia.
           <br />
           With experience in both international and Russian markets, I’ve worked
           <br />

@@ -4,9 +4,7 @@
     class="cards"
   >
     <div class="cards__title">
-      Why Working with Me <br />
-      Feels Easy
-
+      <span v-html="$t('cards.title')"></span>
       <StartArrow
         ref="svgEl"
         class="cards__icon"
@@ -17,64 +15,77 @@
       <div class="cards__item">
         <IconHeart class="cards__item-icon" />
 
-        <div class="cards__item-title">I'm Developer-Friendly</div>
-
-        <div class="cards__item-description">
-          I create Figma layouts that minimize questions from developers.
+        <div class="cards__item-title">
+          {{ $t('cards.items.developerFriendly.title') }}
         </div>
+
+        <div
+          class="cards__item-description"
+          v-html="$t('cards.items.developerFriendly.description')"
+        ></div>
       </div>
       <div class="cards__item">
         <IconBrain class="cards__item-icon" />
 
-        <div class="cards__item-title">
-          I'm Proactive <br />
-          in the Ideation Process
-        </div>
+        <div
+          class="cards__item-title"
+          v-html="$t('cards.items.proactive.title')"
+        ></div>
 
-        <div class="cards__item-description">
-          I offer creative ideas and always aiming <br />
-          to improve the product.
-        </div>
+        <div
+          class="cards__item-description"
+          v-html="$t('cards.items.proactive.description')"
+        ></div>
       </div>
       <div class="cards__item">
         <IconFinger class="cards__item-icon" />
 
-        <div class="cards__item-title">I Don't Point Fingers</div>
+        <div
+          class="cards__item-title"
+          v-html="$t('cards.items.noFingers.title')"
+        ></div>
 
-        <div class="cards__item-description">
-          If I make a mistake (happens to everyone),<br />
-          I own up to it and work to fix it without blaming anybody.
-        </div>
+        <div
+          class="cards__item-description"
+          v-html="$t('cards.items.noFingers.description')"
+        ></div>
       </div>
       <div class="cards__item">
         <IconTicket class="cards__item-icon" />
 
-        <div class="cards__item-title">I Create Well-Structured Tickets</div>
-
-        <div class="cards__item-description">
-          My tickets for design decisions are clear and easy to understand.
+        <div class="cards__item-title">
+          {{ $t('cards.items.tickets.title') }}
         </div>
+
+        <div
+          class="cards__item-description"
+          v-html="$t('cards.items.tickets.description')"
+        ></div>
       </div>
       <div class="cards__item">
         <IconQuestion class="h-[57px]" />
 
-        <div class="cards__item-title">
-          I Never Leave <br />
-          Questions Unresolved
-        </div>
+        <div
+          class="cards__item-title"
+          v-html="$t('cards.items.questions.title')"
+        ></div>
 
-        <div class="cards__item-description">
-          Staying on the same page with colleagues is crucial.
-        </div>
+        <div
+          class="cards__item-description"
+          v-html="$t('cards.items.questions.description')"
+        ></div>
       </div>
       <div class="cards__item">
         <IconWatch class="cards__item-icon" />
 
-        <div class="cards__item-title">I Deliver Work on Time</div>
-
-        <div class="cards__item-description">
-          I hate being late—whether it's for friends meetings or work deadlines.
+        <div class="cards__item-title">
+          {{ $t('cards.items.onTime.title') }}
         </div>
+
+        <div
+          class="cards__item-description"
+          v-html="$t('cards.items.onTime.description')"
+        ></div>
       </div>
     </div>
 
@@ -82,12 +93,12 @@
       <div class="cards__item cards__item-transform">
         <IconGirl />
 
-        <div class="cards__item-title">I’m Just Nice</div>
+        <div class="cards__item-title">{{ $t('cards.items.nice.title') }}</div>
 
-        <div class="cards__item-description !text-white">
-          I have a pretty good sense of humor <br />
-          and am an easy-going person to talk to.
-        </div>
+        <div
+          class="cards__item-description !text-white"
+          v-html="$t('cards.items.nice.description')"
+        />
       </div>
     </div>
   </div>

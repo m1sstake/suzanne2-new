@@ -35,7 +35,7 @@ import cvPDF from '@/assets/files/cv.pdf';
 
 const { t } = useI18n();
 const menuItems = computed(() => [
-  { name: 'main', to: '/' },
+  { name: t('menu.main'), to: '/' },
   { name: t('menu.myCV'), link: cvPDF },
   { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.contact'), to: '/#contacts' },

@@ -3,13 +3,13 @@
     <div class="project-intro__title"><slot name="title" /></div>
     <div class="project-intro__info">
       <div class="project-intro__about">
-        <div class="project-intro__about-title">About</div>
+        <div class="project-intro__about-title">{{ $t('projectIntro.about') }}</div>
         <div class="project-intro__about-description">
           <slot name="about" />
         </div>
       </div>
       <div class="project-intro__role">
-        <div class="project-intro__role-title">Role</div>
+        <div class="project-intro__role-title">{{ $t('projectIntro.role') }}</div>
         <div class="project-intro__role-txt">{{ props.role }}</div>
         <div
           v-if="$slots.role"

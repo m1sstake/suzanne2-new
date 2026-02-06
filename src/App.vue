@@ -25,7 +25,7 @@ body {
   min-height: 100%;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-helvetica);
+  font-family: var(--font-family);
   box-sizing: border-box;
 }
 .wrapper {

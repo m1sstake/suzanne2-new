@@ -24,4 +24,14 @@ export const routes = [
     name: 'GraphicDesignPage',
     component: () => import('@/pages/GraphicDesignPage.vue'),
   },
+  {
+    path: '/gid-hub',
+    name: 'GidHubPage',
+    component: () => import('@/pages/GidHub.vue'),
+  },
+  {
+    path: '/epv',
+    name: 'EpvPage',
+    component: () => import('@/pages/EpvPage.vue'),
+  },
 ];

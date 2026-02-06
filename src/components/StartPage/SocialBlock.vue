@@ -1,6 +1,6 @@
 <template>
   <div class="social">
-    <div class="social__title">So...</div>
+    <div class="social__title">{{ $t('social.title') }}</div>
 
     <div class="social__body">
       <div
@@ -8,7 +8,7 @@
         @click="linkToCV"
       >
         <div class="social__info-wrap">
-          <div class="social__info-text">here’s my CV</div>
+          <div class="social__info-text">{{ $t('social.cv') }}</div>
           <IconExport class="social__info-img"></IconExport>
         </div>
 
@@ -23,9 +23,11 @@
           class="social__info-item"
           @click="linkToEmail"
         >
-          <div class="social__info-text">email</div>
+          <div class="social__info-text">{{ $t('social.email') }}</div>
           <div class="social__info-wrap">
-            <div class="social__info-text">sharanovasuzanna73@gmail.com</div>
+            <div class="social__info-text">
+              {{ 's.su3anna@yandex.ru' }}
+            </div>
             <IconExport class="social__info-img"></IconExport>
           </div>
         </div>
@@ -33,9 +35,9 @@
           class="social__info-item"
           @click="openLinkedinPage"
         >
-          <div class="social__info-text">linkedin</div>
+          <div class="social__info-text">{{ $t('social.linkedin') }}</div>
           <div class="social__info-wrap">
-            <div class="social__info-text">open my linkedin profile</div>
+            <div class="social__info-text">{{ $t('social.linkedinText') }}</div>
             <IconExport class="social__info-img"></IconExport>
           </div>
         </div>
@@ -48,7 +50,7 @@ import IconExport from '@/assets/icons/IconExport.svg';
 import cvPDF from '@/assets/files/cv.pdf';
 
 function linkToEmail() {
-  window.open('mailto:sharanovasuzanna73@gmail.com', '_blank');
+  window.open('mailto:s.su3anna@yandex.ru', '_blank');
 }
 
 function openLinkedinPage() {

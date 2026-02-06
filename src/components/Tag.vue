@@ -15,14 +15,14 @@ const props = defineProps({
 </script>
 <style>
 .project__tag-inner {
-  border-radius: 4px;
-  border: 0.5px solid var(--color-border-grey);
-  padding: var(--space-xs, 4px) var(--space-sm, 8px);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-border-grey);
+  border-radius: 32px;
   text-align: left;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 24px;
   display: inline-block;
 }
 </style>

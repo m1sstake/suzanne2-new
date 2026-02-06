@@ -17,7 +17,9 @@
       </div>
 
       <div class="project-preview__tags">
-        <span class="project-preview__tag-label"> i was responsible for </span>
+        <span class="project-preview__tag-label">{{
+          $t('projectPreview.iWasResponsibleFor')
+        }}</span>
 
         <div class="project__tags-list">
           <Tag
@@ -118,18 +120,6 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-}
-
-.project__tag-inner {
-  border-radius: 4px;
-  border: 0.5px solid var(--color-border-grey);
-  padding: var(--space-xs, 4px) var(--space-sm, 8px);
-  text-align: left;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  display: inline-block;
 }
 
 .project-preview:hover .project-preview__title {

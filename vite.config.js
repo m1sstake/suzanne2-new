@@ -27,8 +27,8 @@ export default defineConfig({
       custom: {
         families: [
           {
-            name: 'AlbertSans',
-            local: 'AlbertSans',
+            name: 'TT Interphases Pro',
+            local: 'TT Interphases Pro',
             src: ['./src/assets/fonts/*.ttf'],
           },
         ],
@@ -45,6 +45,7 @@ export default defineConfig({
         dirname(fileURLToPath(import.meta.url)),
         './src/locales/*.js',
       ),
+      strictMessage: false,
     }),
   ],
   css: {

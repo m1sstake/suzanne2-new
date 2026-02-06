@@ -14,7 +14,7 @@
     <div class="work-item__title">{{ props.title }}</div>
 
     <div class="work-item__bottom-wrap">
-      <div class="work-item__description">Open this project</div>
+      <div class="work-item__description">{{ $t('workItem.openProject') }}</div>
       <RightArrow class="work-item__icon" />
     </div>
   </router-link>

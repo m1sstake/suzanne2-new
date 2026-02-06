@@ -3,7 +3,7 @@
     v-motion-fade
     class="other-works"
   >
-    <div class="other-works__title">Other works</div>
+    <div class="other-works__title">{{ $t('otherWorks.title') }}</div>
 
     <div class="other-works__body">
       <WorkItem
@@ -19,28 +19,40 @@ import WorkItem from '@/components/OtherWorks/WorkItem.vue';
 import { computed, onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 
-import SavedCover from '@/assets/images/other-works/saved-messages-min.png';
-import GraphicCover from '@/assets/images/other-works/graphic-min.png';
-import HseCover from '@/assets/images/other-works/hse-min.png';
-import HeylamaCover from '@/assets/images/other-works/heylama-min.png';
+// import GraphicCover from '@/assets/images/other-works/graphic-min.png';
+// import HseCover from '@/assets/images/other-works/hse-min.png';
+import HeylamaCover from '@/assets/images/projects-covers/heylama-cover.png';
+import GidHubCover from '@/assets/images/projects-covers/gid-hub-cover.png';
+import EpvCover from '@/assets/images/projects-covers/corporate-app-cover.png';
+import SavedCover from '@/assets/images/projects-covers/saved-messages-cover.png';
 
 const works = [
+  {
+    title: 'ГИД.Хаб',
+    routeName: 'GidHubPage',
+    poster: GidHubCover,
+  },
+  {
+    title: 'Корпоративное приложение ГИД',
+    routeName: 'EpvPage',
+    poster: EpvCover,
+  },
   {
     title: 'Saved Messages',
     routeName: 'SavedMessagesPage',
     poster: SavedCover,
   },
-  {
-    title: 'Graphic Design Projects',
-    routeName: 'GraphicDesignPage',
-    poster: GraphicCover,
-  },
-  {
-    title: 'UX Solutions For HSE Lyceum',
-    routeName: 'HsePage',
-    poster: HseCover,
-  },
-  { title: 'Heylama', routeName: 'HeylamaPage', poster: HeylamaCover },
+  // {
+  //   title: 'Graphic Design Projects',
+  //   routeName: 'GraphicDesignPage',
+  //   poster: GraphicCover,
+  // },
+  // {
+  //   title: 'UX Solutions For HSE Lyceum',
+  //   routeName: 'HsePage',
+  //   poster: HseCover,
+  // },
+  { title: 'Heylama AI', routeName: 'HeylamaPage', poster: HeylamaCover },
 ];
 
 const visibleProjects = ref([]);
@@ -49,8 +61,8 @@ const route = useRoute();
 
 const pageIdxes = {
   ['SavedMessagesPage']: 0,
-  ['GraphicDesignPage']: 1,
-  ['HsePage']: 2,
+  ['GidHubPage']: 1,
+  ['EpvPage']: 2,
   ['HeylamaPage']: 3,
 };
 

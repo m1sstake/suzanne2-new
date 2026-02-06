@@ -3,7 +3,7 @@
     --color-accent-red: #AB1212;
     --color-background: #F5F5F5;
     --color-white: #FFFFFF;
-    --color-border-grey: #9D9D9D;
+    --color-border-grey:rgba(0, 0, 0, 0.05);
     --color-text-gray: #656565;
     --color-links-blue: #00ADB9;
 
@@ -20,6 +20,7 @@
 
     --border-radius-sm: 2px;
     --border-radius-md: 4px;
+    --border-radius-xl: 32px;
 
-    --font-helvetica: 'AlbertSans', sans-serif;
+    --font-family: 'TT Interphases Pro', sans-serif;
 }

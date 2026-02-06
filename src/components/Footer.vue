@@ -13,9 +13,9 @@
         </div>
 
         <div class="footer-person__wrapper">
-          <div class="footer-person__title">Syuzanna Sharanova</div>
+          <div class="footer-person__title">{{ $t('name') }}</div>
 
-          <div class="footer-person__subtitle">UX/UI Designer</div>
+          <div class="footer-person__subtitle">{{ $t('footer.subtitle') }}</div>
         </div>
       </div>
 
@@ -42,7 +42,7 @@
       <div class="footer-copyright">
         <IconEyes class="footer-copyright__image" />
 
-        <div class="footer-copyright__text">2025</div>
+        <div class="footer-copyright__text">{{ $t('footer.copyright') }}</div>
       </div>
     </div>
   </footer>
@@ -55,7 +55,7 @@ import cvPDF from '@/assets/files/cv.pdf';
 
 const { t } = useI18n();
 const menuItems = computed(() => [
-  { name: 'main', to: '/' },
+  { name: t('menu.main'), to: '/' },
   { name: t('menu.myCV'), link: cvPDF },
   { name: t('menu.aboutMe'), to: '/#about' },
   { name: t('menu.contact'), to: '/#contacts' },

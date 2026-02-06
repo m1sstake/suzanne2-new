@@ -8,22 +8,32 @@
 
     <div class="start__stats">
       <div class="start__stat">
-        <span class="start__stat-title">3.5 years</span>
-        <span class="start__stat-value">experience</span>
+        <span class="start__stat-title">{{
+          $t('intro.stats.experience')
+        }}</span>
+        <span class="start__stat-value">{{
+          $t('intro.stats.experienceLabel')
+        }}</span>
       </div>
       <div>
         <div class="start__stat">
-          <span class="start__stat-title">Moscow</span>
-          <span class="start__stat-value">currently based</span>
+          <span class="start__stat-title">{{
+            $t('intro.stats.location')
+          }}</span>
+          <span class="start__stat-value">{{
+            $t('intro.stats.locationLabel')
+          }}</span>
         </div>
       </div>
       <div>
         <div class="start__stat">
-          <span class="start__stat-title">3</span>
-          <span class="start__stat-value w-100">
-            product companies <br />
-            I’ve worked with
-          </span>
+          <span class="start__stat-title">{{
+            $t('intro.stats.companies')
+          }}</span>
+          <span
+            class="start__stat-value w-100"
+            v-html="$t('intro.stats.companiesLabel')"
+          ></span>
         </div>
       </div>
     </div>
@@ -31,26 +41,15 @@
     <div class="start__info">
       <IconFlower class="start__logo" />
 
-      <div class="start__info-title">Hi, I’m Susan, a UX/UI Designer</div>
+      <div
+        class="start__info-title"
+        v-html="$t('intro.title')"
+      ></div>
 
       <div class="start__info-description">
-        <p>
-          Hi, I’m Susan, a 26-year-old UX/UI designer from Moscow, Russia.
-          <br />
-          With experience in both international and Russian markets, I’ve worked
-          <br />
-          across startups and larger companies.
-        </p>
+        <p v-html="$t('intro.description.p1')"></p>
 
-        <p>
-          I specialize in creating intuitive, high-impact designs that drive
-          user <br />
-          engagement and business growth. My process is data-driven, focused
-          <br />
-          on user research and testing to ensure the best outcomes. I adapt
-          <br />
-          quickly to challenges and deliver scalable solutions.
-        </p>
+        <p v-html="$t('intro.description.p2')"></p>
       </div>
     </div>
   </div>
@@ -69,8 +68,9 @@ import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: var(--space-lg);
+  gap: 28px;
   min-width: 139px;
+  position: relative;
 }
 
 .start__stat {
@@ -118,6 +118,7 @@ import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
   color: var(--color-text-gray);
 
   p {
+    white-space: nowrap;
     margin-bottom: var(--space-md);
   }
 

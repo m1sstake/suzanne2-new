@@ -2,26 +2,21 @@
   <div class="page__wrapper">
     <ProjectIntro
       v-motion-fade
-      role="Product Designer"
+      :role="$t('hse.roleLabel')"
     >
       <template #title>
-        UX Solutions <br />
-        for HSE Lyceum
+        <span v-html="$t('hse.title')"></span>
       </template>
 
       <template #about>
-        In this Higher School of Economics project, I designed user interfaces
-        as part of a large design system. My tasks often included adding new
-        sections, pages, or features, which needed thoughtful analysis before
-        starting the design.
+        {{ $t('hse.about') }}
       </template>
 
       <template #role>
-        Improved website interfaces, designed interactions for new website
-        sections, created design solutions to enhance usability
+        {{ $t('hse.role') }}
       </template>
 
-      <template #time>June 2021 - January 2022</template>
+      <template #time>{{ $t('hse.time') }}</template>
     </ProjectIntro>
 
     <video
@@ -37,57 +32,36 @@
       v-motion-fade
       class="project__subtitle"
     >
-      Example task
+      {{ $t('hse.example.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <div class="project__bold-title">Name and Roles</div>
+      <div class="project__bold-title">
+        {{ $t('hse.example.nameAndRoles.title') }}
+      </div>
 
-      <p>
-        Presentation of Teacher’s Feedback for a Student. User is any Staff
-        Member.
-      </p>
+      <p>{{ $t('hse.example.nameAndRoles.text') }}</p>
 
-      <div class="project__bold-title mt-xl">User Story</div>
+      <div class="project__bold-title mt-xl">
+        {{ $t('hse.example.userStory.title') }}
+      </div>
 
-      <p>
-        <span class="font-bold">As a</span> staff member,<br />
-        <span class="font-bold"> I want to </span> provide feedback on any
-        student,<br />
-        <span class="font-bold">so that</span> mentors can review it to support
-        their students.
-      </p>
-      <p>
-        Mentors see a student’s feedback as a top summary and a
-        reverse-chronological feed. <br />
-        Any staff member can add feedback for any student.
-      </p>
+      <p v-html="$t('hse.example.userStory.text')"></p>
+      <p v-html="$t('hse.example.userStory.p2')"></p>
 
-      <div class="project__bold-title mt-xl">Elements to include</div>
+      <div class="project__bold-title mt-xl">
+        {{ $t('hse.example.elements.title') }}
+      </div>
 
       <ul class="project__list">
-        <li><span>An indicator showing if an feedback is new.</span></li>
-        <li><span>An indicator for important feedback</span></li>
-        <li>
-          <span> The full text, plus edit, delete options </span>
-        </li>
-        <li>
-          <span>
-            Previews of attached files with download links, if any are available
-          </span>
-        </li>
-        <li>
-          <span>
-            An input field allowing the curator to add private notes
-          </span>
-        </li>
-        <li>
-          <span>
-            The status changes from "New" to "Viewed" once the page is accessed
-          </span>
+        <li
+          v-for="(item, i) in $tm('hse.example.elements.items')"
+          :key="i"
+        >
+          <span>{{ $rt(item) }}</span>
         </li>
       </ul>
     </div>
@@ -96,23 +70,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      My approach
+      {{ $t('hse.approach.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text w-[65%]"
     >
-      <p>
-        I focused on understanding the needs of curators and staff, organizing
-        information in a clear hierarchy—with quick actions in the top section
-        and detailed insights in a chronological feed—and ensuring intuitive
-        interactions, such as clear indicators and easy-to-edit entries. I also
-        added features like private notes for curators to support
-        personalization. My goal was to make the workflow as smooth and
-        accessible as possible, ensuring I don’t break the patterns users got
-        used to.
-      </p>
+      <p>{{ $t('hse.approach.text') }}</p>
     </div>
 
     <video

@@ -1,19 +1,19 @@
 <template>
   <div class="mobile-block">
-    <div class="mobile-block__header">Syuzanna Sharanova, UX/UI Designer</div>
+    <div class="mobile-block__header">{{ $t('mobile.header') }}</div>
 
     <div class="mobile-block__body">
       <IconEyes class="mobile-block__icon" />
 
-      <div class="mobile-block__body-title">
-        Mobile Version <br />
-        in Progress
-      </div>
+      <div
+        class="mobile-block__body-title"
+        v-html="$t('mobile.title')"
+      ></div>
 
-      <div class="mobile-block__body-descr">
-        Please use a desktop <br />
-        for the best experience.
-      </div>
+      <div
+        class="mobile-block__body-descr"
+        v-html="$t('mobile.description')"
+      ></div>
     </div>
   </div>
 </template>

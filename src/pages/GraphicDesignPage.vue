@@ -2,40 +2,31 @@
   <div class="page__wrapper">
     <ProjectIntro
       v-motion-fade
-      role="Graphic Designer, Illustartor"
+      :role="$t('graphic.roleLabel')"
     >
-      <template #title
-        >Graphic Design <br />
-        Projects
+      <template #title>
+        <span v-html="$t('graphic.title')"></span>
       </template>
 
       <template #about>
-        Various projects I worked on as a designer and illustrator. Many of them
-        were freelance or personal projects created to practice composition,
-        forms, shapes, and color.
+        {{ $t('graphic.about') }}
       </template>
 
-      <template #time> 2023 - 2024</template>
+      <template #time>{{ $t('graphic.time') }}</template>
     </ProjectIntro>
 
     <div
       v-motion-fade
       class="project__subtitle"
     >
-      Blendo – Perfume Festival
+      {{ $t('graphic.blendo.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        Blendo Perfume Festival is an event for fragrance enthusiasts and those
-        seeking personalized scents that reflect their unique story and style.
-        The event targets men and women aged 25-50, with middle to high income,
-        who are willing to invest in niche fragrances. The brand's goal is to
-        inspire exploration and discovery.
-      </p>
+      <p>{{ $t('graphic.blendo.text') }}</p>
     </div>
 
     <div
@@ -75,22 +66,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      RAW – Concept Beauty Salon
+      {{ $t('graphic.raw.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        A conceptual beauty salon located in the city forest, "Raw" emphasizes
-        the natural essence of human beauty. Warm, nature-inspired visuals and
-        organic, imperfect illustration forms convey the salon's core values:
-        empathy, authenticity, and freedom. The message: "You are naturally
-        beautiful." <br />
-        The visual identity is centered around a strand of human hair, freshly
-        cut by a stylist.
-      </p>
+      <p v-html="$t('graphic.raw.text')"></p>
     </div>
 
     <div

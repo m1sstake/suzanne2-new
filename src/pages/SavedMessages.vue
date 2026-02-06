@@ -2,26 +2,19 @@
   <div class="page__wrapper">
     <ProjectIntro
       v-motion-fade
-      role="Product Designer"
+      :role="$t('savedMessages.roleLabel')"
     >
-      <template #title>Saved Messages </template>
+      <template #title>{{ $t('savedMessages.title') }}</template>
 
       <template #about>
-        Saved Messages is an educational tool for intermediate and advanced
-        language learners to read original news and articles, save useful words
-        and phrases, and export them. A pet project. <br />
-        <br />
-        Thanks to this project, I was hired by the Heylama app (also in my
-        portfolio). It’s no surprise that this new project is similar in both
-        color scheme and ed-tech focus.
+        <span v-html="$t('savedMessages.about')"></span>
       </template>
 
       <template #role>
-        UX research (in-depth interviews, competitor analysis, CJM, user flow,
-        usability testing), wireframing, prototyping, site architecture, design.
+        {{ $t('savedMessages.role') }}
       </template>
 
-      <template #time> March 2022 - June 2022</template>
+      <template #time>{{ $t('savedMessages.time') }}</template>
     </ProjectIntro>
 
     <div
@@ -54,7 +47,7 @@
       v-motion-fade
       class="project__subtitle"
     >
-      Problem and goals
+      {{ $t('savedMessages.problem.title') }}
     </div>
 
     <div
@@ -87,7 +80,7 @@
       v-motion-fade
       class="project__subtitle"
     >
-      Hypothesis and interviews
+      {{ $t('savedMessages.hypothesis.title') }}
     </div>
 
     <div
@@ -138,18 +131,17 @@
       v-motion-fade
       class="project__subtitle"
     >
-      Interview insights
+      {{ $t('savedMessages.insights.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p class="font-normal">
-        I collected all the insights in Notion, labeling them green if the
-        answer <br />
-        supported the hypothesis and red if it disproved the hypothesis.
-      </p>
+      <p
+        class="font-normal"
+        v-html="$t('savedMessages.insights.p1')"
+      ></p>
     </div>
 
     <div
@@ -168,33 +160,19 @@
       class="project__text"
     >
       <p>
-        <span class="font-semibold">
-          At the end of the table, I outlined user challenges in advanced
-          language learning and solutions for them.
-        </span>
-        This will help with competitor analysis and refining my product.
+        <span
+          class="font-semibold"
+          v-html="$t('savedMessages.insights.bold')"
+        ></span>
+        {{ $t('savedMessages.insights.description') }}
       </p>
 
       <ul class="project__list">
-        <li>
-          Both students and teachers use news articles for learning; however,
-          not everyone finds news engaging, with many preferring articles.
-        </li>
-        <li>
-          News is typically accessed at higher language levels (B1-B2 and
-          above).
-        </li>
-        <li>
-          Respondents tend to watch rather than read the news, while teachers
-          usually provide news in text format.
-        </li>
-        <li>
-          Many high-level English learners aspire to move abroad and use English
-          in everyday life, often requiring language certifications.
-        </li>
-        <li>
-          Half of the respondents use their phones for learning, while the other
-          half use computers or laptops.
+        <li
+          v-for="(item, i) in $tm('savedMessages.insights.items')"
+          :key="i"
+        >
+          {{ $rt(item) }}
         </li>
       </ul>
     </div>
@@ -203,27 +181,21 @@
       v-motion-fade
       class="project__subtitle"
     >
-      Competitors research
+      {{ $t('savedMessages.competitors.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        From the interviews, I identified user pain points my service will
-        address: finding relevant vocabulary and improving reading, listening,
-        and vocabulary skills for various goals, including exams—all on one
-        platform. I then analyzed competing services, their strengths, and their
-        weaknesses in tackling these issues.
-      </p>
+      <p>{{ $t('savedMessages.competitors.text') }}</p>
     </div>
 
     <div
       v-motion-fade
       class="project__subtitle"
     >
-      Customer Journey Map and Future Positioning
+      {{ $t('savedMessages.cjm.title') }}
     </div>
 
     <div
@@ -241,19 +213,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      User flow, Prototyping
+      {{ $t('savedMessages.userFlow.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        The main content on Saved Messages includes articles, news, and
-        podcasts. On the content page, users can highlight any words or phrases
-        and save them as notes on the site. They can then edit these notes,
-        create lists, and print them.
-      </p>
+      <p>{{ $t('savedMessages.userFlow.text') }}</p>
     </div>
 
     <div
@@ -271,28 +238,16 @@
       v-motion-fade
       class="project__subtitle"
     >
-      Usability-testing
+      {{ $t('savedMessages.usability.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        Once the clickable prototype was ready, I conducted 8 usability testing
-        sessions with potential users. I assigned them various tasks and
-        observed how easily they could complete them.
-      </p>
+      <p>{{ $t('savedMessages.usability.p1') }}</p>
 
-      <p>
-        After the testing, I reviewed and categorized feedback, noting usability
-        issues. <br />
-        I ranked problems by impact on user experience, implemented changes and
-        <br />
-        conducted a short follow-up testing. I also documented a few insights
-        for future <br />
-        design decisions.
-      </p>
+      <p v-html="$t('savedMessages.usability.p2')"></p>
     </div>
 
     <div
@@ -306,19 +261,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      UI Design
+      {{ $t('savedMessages.ui.title') }}
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        I saw media content—news, articles, videos, podcasts—as a constant
-        stream of "messages," fragments of knowledge shaping our view of the
-        world. This inspired a design that combines elements of messaging apps
-        with typographic nods to traditional print media for added credibility.
-      </p>
+      <p>{{ $t('savedMessages.ui.text') }}</p>
     </div>
 
     <div

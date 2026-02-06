@@ -27,86 +27,82 @@
       v-motion-fade
       class="start__footer-title"
     >
-      Looking forward to hearing from you!
+      {{ $t('startPage.footerTitle') }}
     </div>
   </div>
 </template>
-<script setup lang="ts">
+<script setup lang="js">
 import ProjectPreview from '@/components/StartPage/ProjectPreview.vue';
 import IntroBlock from '@/components/StartPage/IntroBlock.vue';
 import CardsBlock from '@/components/StartPage/CardsBlock.vue';
 import SocialBlock from '@/components/StartPage/SocialBlock.vue';
 
-import HeylamaCover from '@/assets/images/projects-covers/heylama-cover.jpg';
-import HseCover from '@/assets/images/projects-covers/hse-cover.png';
+import HeylamaCover from '@/assets/images/projects-covers/heylama-cover.png';
+import GidHubCover from '@/assets/images/projects-covers/gid-hub-cover.png';
+import EpvCover from '@/assets/images/projects-covers/corporate-app-cover.png';
+import SavedCover from '@/assets/images/projects-covers/saved-messages-cover.png';
 
-import SavedCover from '@/assets/images/projects-covers/saved-cover.jpg';
-import GraphicCover from '@/assets/images/projects-covers/graphic-cover.jpg';
+// import HseCover from '@/assets/images/projects-covers/hse-cover.png';
+
+// import GraphicCover from '@/assets/images/projects-covers/graphic-cover.jpg';
 
 import { useRouter } from 'vue-router';
+import { computed } from 'vue';
 
-const projects = [
+import { useI18n } from 'vue-i18n';
+
+const { tm, rt, t } = useI18n();
+
+const projects = computed(() => [
   {
-    name: 'Heylama AI Language School',
-    description:
-      'A mobile app from the Berlin startup Heylama that helps users learn foreign languages with AI.',
-    date: '2023 – 2025',
-    tags: [
-      'product design from scratch',
-      'wireframing and sketching',
-      'AI image generation',
-      'brainstorming',
-      'user flow and scenarious',
-      'design system',
-    ],
+    name: t('startPage.projects.gidhub.name'),
+    description: t('startPage.projects.gidhub.description'),
+    date: t('startPage.projects.gidhub.date'),
+    tags: tm('startPage.projects.gidhub.tags').map((tag) => rt(tag)),
+    image: GidHubCover,
+    routeName: 'GidHubPage',
+  },
+  {
+    name: t('startPage.projects.epv.name'),
+    description: t('startPage.projects.epv.description'),
+    date: t('startPage.projects.epv.date'),
+    tags: tm('startPage.projects.epv.tags').map((tag) => rt(tag)),
+    image: EpvCover,
+    routeName: 'EpvPage',
+  },
+  {
+    name: t('startPage.projects.heylama.name'),
+    description: t('startPage.projects.heylama.description'),
+    date: t('startPage.projects.heylama.date'),
+    tags: tm('startPage.projects.heylama.tags').map((tag) => rt(tag)),
     image: HeylamaCover,
     routeName: 'HeylamaPage',
   },
   {
-    name: 'Saved Messages',
-    description:
-      'An educational tool for advanced language learners to read original news and articles, save useful words and phrases, and export them.',
-    date: '2022',
-    tags: [
-      'UX research',
-      'wireframing and prototyping ',
-      'user flow and scenarious',
-      'website architecture',
-      'UX/UI design',
-    ],
+    name: t('startPage.projects.savedMessages.name'),
+    description: t('startPage.projects.savedMessages.description'),
+    date: t('startPage.projects.savedMessages.date'),
+    tags: tm('startPage.projects.savedMessages.tags').map((tag) => rt(tag)),
     image: SavedCover,
     routeName: 'SavedMessagesPage',
   },
-  {
-    name: 'UX Solutions for HSE Lyceum',
-    description: 'Improvement of website interfaces, usability enhancement.',
-    date: '2021',
-    tags: [
-      'UX design',
-      'project maintenance',
-      'wireframing and sketching',
-      'brainstorming',
-      'user flow and scenarious',
-    ],
-    image: HseCover,
-    routeName: 'HsePage',
-  },
-  {
-    name: 'Graphic Design Projects',
-    description:
-      'Various projects I worked on as a designer <br/> and illustrator.',
-    date: '2023 – 2024',
-    tags: [
-      'visual identities and brand guidelines',
-      'logos, packaging, marketing materials',
-      'consistent brand messaging',
-      'brand vision and values',
-      'brainstorming',
-    ],
-    image: GraphicCover,
-    routeName: 'GraphicDesignPage',
-  },
-];
+  // {
+  //   name: t('startPage.projects.hse.name'),
+  //   description: t('startPage.projects.hse.description'),
+  //   date: t('startPage.projects.hse.date'),
+  //   tags: tm('startPage.projects.hse.tags').map((tag) => rt(tag)),
+  //   image: HseCover,
+  //   routeName: 'HsePage',
+  // },
+  // {
+  //   name: t('startPage.projects.graphic.name'),
+  //   description: t('startPage.projects.graphic.description'),
+  //   date: t('startPage.projects.graphic.date'),
+  //   tags: tm('startPage.projects.graphic.tags').map((tag) => rt(tag)),
+  //   image: GraphicCover,
+  //   routeName: 'GraphicDesignPage',
+  // },
+]);
 
 const router = useRouter();
 

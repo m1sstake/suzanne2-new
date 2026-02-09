@@ -4,17 +4,21 @@
       v-motion-fade
       :role="$t('savedMessages.roleLabel')"
     >
-      <template #title>{{ $t('savedMessages.title') }}</template>
+      <template #title>
+        <span v-html="$t('savedMessages.title')"></span>
+      </template>
 
       <template #about>
         <span v-html="$t('savedMessages.about')"></span>
       </template>
 
       <template #role>
-        {{ $t('savedMessages.role') }}
+        <span v-html="$t('savedMessages.role')"></span>
       </template>
 
-      <template #time>{{ $t('savedMessages.time') }}</template>
+      <template #time>
+        <span v-html="$t('savedMessages.time')"></span>
+      </template>
     </ProjectIntro>
 
     <div
@@ -47,40 +51,28 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.problem.title') }}
+      <span v-html="$t('savedMessages.problem.title')"></span>
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>
-        While studying languages, I realized
-        <span class="text-accent-red">
-          there wasn’t a single website for reading news and articles from
-          various foreign sources;
-        </span>
-        each had to be searched separately. Additionally, notes with key
-        vocabulary had to be stored elsewhere.
-      </p>
+      <p v-html="$t('savedMessages.problem.p1')"></p>
 
-      <p>
-        After discussing this with other learners, I discovered many faced the
-        same challenge. My conversation partners often spent considerable time
-        searching for original articles.
-      </p>
+      <p v-html="$t('savedMessages.problem.p2')"></p>
 
-      <p class="project__bold-text !text-accent-red">
-        That was reasonable to create a website featuring curated articles and
-        news from different countries.
-      </p>
+      <p
+        class="project__bold-text !text-accent-red"
+        v-html="$t('savedMessages.problem.bold')"
+      ></p>
     </div>
 
     <div
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.hypothesis.title') }}
+      <span v-html="$t('savedMessages.hypothesis.title')"></span>
     </div>
 
     <div
@@ -88,34 +80,15 @@
       class="project__text"
     >
       <ul class="project__list">
-        <li><span>Language learners have a study plan.</span></li>
-        <li><span>Most aim for a high level of proficiency.</span></li>
-        <li>
-          <span
-            >Those taking classes don’t rely solely on their teacher’s
-            materials; they also seek out their own resources.
-          </span>
-        </li>
-        <li>
-          <span>
-            Respondents frequently look for audio and video sources to aid their
-            studies.
-          </span>
-        </li>
-        <li>
-          <span>
-            Learners seeking vocabulary beyond the B2 level often turn to news
-            sources.
-          </span>
+        <li
+          v-for="(item, i) in $tm('savedMessages.hypothesis.items')"
+          :key="i"
+        >
+          <span v-html="$rt(item)"></span>
         </li>
       </ul>
 
-      <p>
-        8 respondents, young people under 30 from Russia who studied languages
-        when there were many online resources available. Their language
-        proficiency is B2 or higher, and 60-70% work in fields unrelated to
-        English. They are active internet users.
-      </p>
+      <p v-html="$t('savedMessages.hypothesis.description')"></p>
     </div>
 
     <div
@@ -131,7 +104,7 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.insights.title') }}
+      <span v-html="$t('savedMessages.insights.title')"></span>
     </div>
 
     <div
@@ -164,7 +137,7 @@
           class="font-semibold"
           v-html="$t('savedMessages.insights.bold')"
         ></span>
-        {{ $t('savedMessages.insights.description') }}
+        <span v-html="$t('savedMessages.insights.description')"></span>
       </p>
 
       <ul class="project__list">
@@ -172,7 +145,7 @@
           v-for="(item, i) in $tm('savedMessages.insights.items')"
           :key="i"
         >
-          {{ $rt(item) }}
+          <span v-html="$rt(item)"></span>
         </li>
       </ul>
     </div>
@@ -181,21 +154,21 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.competitors.title') }}
+      <span v-html="$t('savedMessages.competitors.title')"></span>
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>{{ $t('savedMessages.competitors.text') }}</p>
+      <p v-html="$t('savedMessages.competitors.text')"></p>
     </div>
 
     <div
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.cjm.title') }}
+      <span v-html="$t('savedMessages.cjm.title')"></span>
     </div>
 
     <div
@@ -213,14 +186,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.userFlow.title') }}
+      <span v-html="$t('savedMessages.userFlow.title')"></span>
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>{{ $t('savedMessages.userFlow.text') }}</p>
+      <p v-html="$t('savedMessages.userFlow.text')"></p>
     </div>
 
     <div
@@ -238,14 +211,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.usability.title') }}
+      <span v-html="$t('savedMessages.usability.title')"></span>
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>{{ $t('savedMessages.usability.p1') }}</p>
+      <p v-html="$t('savedMessages.usability.p1')"></p>
 
       <p v-html="$t('savedMessages.usability.p2')"></p>
     </div>
@@ -261,14 +234,14 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('savedMessages.ui.title') }}
+      <span v-html="$t('savedMessages.ui.title')"></span>
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>{{ $t('savedMessages.ui.text') }}</p>
+      <p v-html="$t('savedMessages.ui.text')"></p>
     </div>
 
     <div

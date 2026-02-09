@@ -42,16 +42,6 @@ const works = [
     routeName: 'SavedMessagesPage',
     poster: SavedCover,
   },
-  // {
-  //   title: 'Graphic Design Projects',
-  //   routeName: 'GraphicDesignPage',
-  //   poster: GraphicCover,
-  // },
-  // {
-  //   title: 'UX Solutions For HSE Lyceum',
-  //   routeName: 'HsePage',
-  //   poster: HseCover,
-  // },
   { title: 'Heylama AI', routeName: 'HeylamaPage', poster: HeylamaCover },
 ];
 
@@ -60,9 +50,9 @@ const visibleProjects = ref([]);
 const route = useRoute();
 
 const pageIdxes = {
-  ['SavedMessagesPage']: 0,
-  ['GidHubPage']: 1,
-  ['EpvPage']: 2,
+  ['SavedMessagesPage']: 2,
+  ['GidHubPage']: 0,
+  ['EpvPage']: 1,
   ['HeylamaPage']: 3,
 };
 

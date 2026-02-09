@@ -13,7 +13,7 @@
         </div>
 
         <img
-          src="@/assets/images/mini-cv.jpg"
+          src="@/assets/images/mini-cv.png"
           alt="cv"
           class="social__img"
         />
@@ -35,9 +35,9 @@
           class="social__info-item"
           @click="openLinkedinPage"
         >
-          <div class="social__info-text">{{ $t('social.linkedin') }}</div>
+          <div class="social__info-text">{{ $t('social.linkedinText') }}</div>
           <div class="social__info-wrap">
-            <div class="social__info-text">{{ $t('social.linkedinText') }}</div>
+            <div class="social__info-text">{{ $t('social.linkedin') }}</div>
             <IconExport class="social__info-img"></IconExport>
           </div>
         </div>

@@ -49,16 +49,16 @@
       v-motion-fade
       class="project__subtitle"
     >
-      {{ $t('heylama.overview.title') }}
+      <span v-html="$t('heylama.overview.title')"></span>
     </div>
 
     <div
       v-motion-fade
       class="project__text"
     >
-      <p>{{ $t('heylama.overview.p1') }}</p>
+      <p v-html="$t('heylama.overview.p1')"></p>
 
-      <p>{{ $t('heylama.overview.p2') }}</p>
+      <p v-html="$t('heylama.overview.p2')"></p>
 
       <span
         class="project__bold-text"
@@ -95,9 +95,10 @@
       v-motion-fade
       class="project__text"
     >
-      <div class="project__bold-title">
-        {{ $t('heylama.personalization.process.title') }}
-      </div>
+      <div
+        class="project__bold-title"
+        v-html="$t('heylama.personalization.process.title')"
+      ></div>
 
       <p v-html="$t('heylama.personalization.process.text')"></p>
 
@@ -105,7 +106,7 @@
         {{ $t('heylama.personalization.done.title') }}
       </div>
 
-      <p>{{ $t('heylama.personalization.done.text') }}</p>
+      <p v-html="$t('heylama.personalization.done.text')"></p>
     </div>
 
     <div
@@ -149,7 +150,7 @@
         {{ $t('heylama.memory.process.title') }}
       </div>
 
-      <p>{{ $t('heylama.memory.process.text') }}</p>
+      <p v-html="$t('heylama.memory.process.text')"></p>
     </div>
 
     <div
@@ -175,11 +176,12 @@
       v-motion-fade
       class="project__text"
     >
-      <div class="project__bold-title">
-        {{ $t('heylama.realTime.process.title') }}
-      </div>
+      <div
+        class="project__bold-title"
+        v-html="$t('heylama.realTime.process.title')"
+      ></div>
 
-      <p>{{ $t('heylama.realTime.process.text') }}</p>
+      <p v-html="$t('heylama.realTime.process.text')"></p>
     </div>
 
     <div

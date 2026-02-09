@@ -68,7 +68,7 @@ import IconFlower from '@/assets/icons/main-page/IconFlower.svg';
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 28px;
+  gap: 35px;
   min-width: 139px;
   position: relative;
 }

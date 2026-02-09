@@ -203,7 +203,7 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
 
 .cards__item-transform {
   width: 364px;
-  height: 205px;
+  height: 230px;
   background-color: var(--color-accent-red);
   transform: rotate(-5.076deg);
   position: relative;
@@ -222,7 +222,7 @@ const { stop } = useIntersectionObserver(svgEl, ([entry]) => {
 .cards__icon {
   position: absolute;
   bottom: -90px;
-  left: 300px;
+  left: 400px;
 }
 
 /***************************************************
